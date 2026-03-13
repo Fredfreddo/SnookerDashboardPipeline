@@ -7,8 +7,8 @@ st.set_page_config(page_title="Snooker Elo Dashboard", layout="wide")
 
 # Map your display names to your actual CSV file names
 ELO_FILES = {
-    "Method A (Standard)": "players_score_history.csv",
-    "Method B (Option 3 + Decay)": "O3players_score_history.csv"
+    "Method A (Standard ELO + 70+ breaks factor)": "players_score_history.csv",
+    "Method B (Expected frames won + 70+ breaks factor + temporal decay & recovery)": "O3players_score_history.csv"
 }
 
 # Cache the data loading so switching toggles is instant
