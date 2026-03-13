@@ -47,6 +47,7 @@ except FileNotFoundError:
 
 # --- 3. VIEW 1: HOME PAGE ---
 if app_mode == "Home":
+    st.image("snooker_logo.png", width=450)
     st.title("Snooker Form Analysis & Rankings")
 
     # Placeholder markdown for you to fill in
@@ -59,7 +60,7 @@ if app_mode == "Home":
 
     In this approach, apart from typical ELO, recent abilities to make 70+ breaks are taken into consideration. Average score for all players is 1500.
     
-    #### ELO is handle on frame level
+    #### ELO is handled on frame level
     
     For a Match between player1 and player2, we have expected frame win rate for player1 as:
     
