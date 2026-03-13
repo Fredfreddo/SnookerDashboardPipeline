@@ -1,4 +1,60 @@
 name: daily_update.yml
+
 on:
+  # 1. Triggers automatically whenever you push code/json to the main branch
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '*.csv' # Prevents infinite loops when the bot pushes the updated CSVs
+
+  # 2. Allows you to manually click a "Run" button in the GitHub UI
+  workflow_dispatch:
+
+# Grants the Action permission to push the calculated CSVs back to the repo
+permissions:
+  contents: write
 
 jobs:
+  process-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Download your repository onto the GitHub server
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Install Java 11 (matching your pom.xml)
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: maven
+
+      # Step 3: Compile the Java code
+      - name: Compile Java
+        run: mvn clean compile
+
+      # Step 4: Run the first algorithm (Method A)
+      - name: Run JsonProcessor (Standard)
+        # IMPORTANT: Replace 'org.example' with your actual package name if you have one
+        run: mvn exec:java -Dexec.mainClass="JsonProcessor"
+
+      # Step 5: Run the second algorithm (Option 3)
+      - name: Run JsonProcessorO3 (Option 3)
+        # IMPORTANT: Replace 'org.example' with your actual package name
+        run: mvn exec:java -Dexec.mainClass="JsonProcessorO3"
+
+      # Step 6: Commit and Push the new CSVs back to GitHub
+      - name: Commit Updated CSVs
+        run: |
+          # Set up the bot identity
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Stage the two specific CSV files
+          git add players_score_history.csv O3players_score_history.csv
+          
+          # Check if there are actual changes. If yes, commit and push. If no, skip gracefully.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-calculate Elo scores from updated JSONs" && git push)
