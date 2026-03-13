@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
+import math
 
 # --- 1. SETUP & CONFIG ---
 st.set_page_config(page_title="Snooker Elo Dashboard", layout="wide")
@@ -24,11 +26,50 @@ def load_data(filename):
     df['date'] = pd.to_datetime(df['date'])
     return df
 
+def apply_decay_recovery(player, current_score):
+    stats = historical_stats.loc[player]
+    average_score = stats['average_score']
+    highest_score = stats['highest_score']
+
+    last_match_date = df[df['name'] == player]['date'].max()
+    days_inactive = (pd.Timestamp.now() - last_match_date).days
+
+    # display how many days the player has been inactive
+    st.markdown(f"It has been **{days_inactive}** days since **{player}** last played.")
+
+    if days_inactive > 7:
+        if current_score < 1500 and current_score < highest_score:
+            recovery_amount = (highest_score - current_score) * min(0.95, (days_inactive - 7) / 358.0)
+            return current_score + recovery_amount
+        elif current_score > average_score:
+            decay_amount = (current_score - average_score) * min(1.0, (days_inactive - 7) / 49.0)
+            return current_score - decay_amount
+
+    return current_score
+
+def getFrameWinProbability(score1, score2):
+    return 1 / (1 + np.exp((score2 - score1) / 400))
+
+def getMostPossibleOutcomes(prob1, match_length):
+    outcomes = {}
+    # if player 1 wins
+    k = match_length // 2 + 1
+    for r in range(k):
+        outcomes[f"{k} - {r}"] = (math.comb(k + r - 1, r) * (prob1 ** k) * ((1 - prob1) ** r))
+    # if player 2 wins
+    r = match_length // 2 + 1
+    for k in range(r):
+        outcomes[f"{k} - {r}"] = (math.comb(k + r - 1, k) * (prob1 ** k) * ((1 - prob1) ** r))
+    
+    # print out the most likely outcome with scoreline and probability
+    most_likely_outcome = max(outcomes, key=outcomes.get)
+    st.markdown(f"**Most Likely Outcome:** {most_likely_outcome} with probability {outcomes[most_likely_outcome]:.2%}")
+
 # --- 2. SIDEBAR CONTROLS ---
 st.sidebar.title("Navigation & Filters")
 
 # Added "Home" as the first (default) option
-app_mode = st.sidebar.radio("Choose a view:", ["Home", "Daily Rankings", "Score Trajectories"])
+app_mode = st.sidebar.radio("Choose a view:", ["Home", "Daily Rankings", "Score Trajectories", "Head2Head Prediction"])
 st.sidebar.markdown("---")
 
 # Toggle for the Elo calculation method
@@ -53,7 +94,7 @@ if app_mode == "Home":
     # Placeholder markdown for you to fill in
     st.markdown(r"""
     ## About This Dashboard
-    This dashboard provides a statistical analysis of professional snooker player's live form. Two different methods are provided (explained below). You may use the sidebar to choose the method. This scoring algorithm may serve as a baseline to predict matches outcomes.
+    This dashboard provides a statistical analysis of professional snooker player's live form. Two different methods are provided (explained below). You may use the sidebar to choose the methods and what to see. This scoring algorithm may serve as a baseline to predict matches outcomes.
     
     ## The Methodologies
     ### Method A
@@ -176,7 +217,7 @@ elif app_mode == "Score Trajectories":
     st.title(f"Score Trajectories - {selected_method}")
 
     all_players = sorted(df['name'].unique())
-    default_players = all_players[:3] if len(all_players) >= 3 else all_players
+    default_players = ["Zhao Xintong", "Mark Selby", "Judd Trump"]
 
     selected_players = st.multiselect("Select Players to Compare:", all_players, default=default_players)
 
@@ -203,3 +244,36 @@ elif app_mode == "Score Trajectories":
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.warning("No match data found for these players in the selected timeframe.")
+
+elif app_mode == "Head2Head Prediction":
+    st.title(f"Head2Head Prediction - {selected_method}")
+    st.markdown("Select two players and the match length to see the predicted outcome based on the method chosen.")
+    # scrolldown selectors for player 1, player 2, and match length
+    all_players = sorted(df['name'].unique())
+    player1 = st.selectbox("Select Player 1:", all_players, index=all_players.index("Zhao Xintong"))
+    player2 = st.selectbox("Select Player 2:", all_players, index=all_players.index("Mark Selby"))
+    match_length = st.selectbox("Select Match Length (Best of):", [1, 3, 5, 7, 9, 11, 17, 19, 21, 25, 33, 35], index=0)
+
+    # Get the latest scores for both players and display them
+    latest_scores = df.groupby('name').tail(1).set_index('name')['score']
+    score1 = latest_scores.get(player1, 1500)
+    score2 = latest_scores.get(player2, 1500)
+    st.markdown(f"**{player1}**: {score1:.2f} | **{player2}**: {score2:.2f}")
+
+    # consider decay and recovery if Method B
+    if selected_method == "Method B":
+        # Get the historical average and highest scores for both players
+        historical_stats = df.groupby('name').agg({'score': ['mean', 'max']})
+        historical_stats.columns = ['average_score', 'highest_score']
+
+        score1 = apply_decay_recovery(player1, score1)
+        score2 = apply_decay_recovery(player2, score2)
+        # display the adjusted scores after decay and recovery
+        st.markdown(f"**Adjusted Scores after Decay/Recovery**: **{player1}**: {score1:.2f} | **{player2}**: {score2:.2f}")
+
+    # get the frame win probability for player1 against player2
+    frame_win_prob = getFrameWinProbability(score1, score2)
+    st.markdown(f"**Predicted Frame Win Probability for {player1} against {player2}:** {frame_win_prob:.2%}")
+
+    # get the most likely outcome for the match
+    getMostPossibleOutcomes(frame_win_prob, match_length)
