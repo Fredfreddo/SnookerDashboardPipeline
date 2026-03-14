@@ -1,6 +1,9 @@
 name: daily_update.yml
 
 on:
+  schedule:
+    - cron: '0 2 * * *'
+
   # 1. Triggers automatically whenever you push code/json to the main branch
   push:
     branches:
@@ -36,6 +39,10 @@ jobs:
       - name: Compile Java
         run: mvn clean compile
 
+      # NEW: Run the web scraper first to update the JSON files
+      - name: Run Web Scraper (UpdateCrawler)
+        run: mvn exec:java -Dexec.mainClass="UpdateCrawler"
+
       # Step 4: Run the first algorithm (Method A)
       - name: Run JsonProcessor (Standard)
         # IMPORTANT: Replace 'org.example' with your actual package name if you have one
@@ -47,14 +54,14 @@ jobs:
         run: mvn exec:java -Dexec.mainClass="JsonProcessorO3"
 
       # Step 6: Commit and Push the new CSVs back to GitHub
-      - name: Commit Updated CSVs
+      - name: Commit Updated CSVs and json files
         run: |
           # Set up the bot identity
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
           # Stage the two specific CSV files
-          git add players_score_history.csv O3players_score_history.csv
+          git add *.json players_score_history.csv O3players_score_history.csv
           
           # Check if there are actual changes. If yes, commit and push. If no, skip gracefully.
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-calculate Elo scores from updated JSONs" && git push)
