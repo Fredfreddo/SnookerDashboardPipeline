@@ -69,8 +69,9 @@ def getMostPossibleOutcomes(prob1, match_length):
 st.sidebar.title("Navigation & Filters")
 
 # Added "Home" as the first (default) option
-app_mode = st.sidebar.radio("Choose a view:", ["Home", "Daily Rankings", "Score Trajectories", "Head2Head Prediction"])
-st.sidebar.markdown("---")
+app_mode = st.sidebar.radio("Choose a view:", ["Home", "Daily Rankings", "Score Trajectories", "Head2Head Prediction", "Next Matches Predictions"])
+if app_mode == "Home":
+    st.sidebar.markdown("---")
 
 # Toggle for the Elo calculation method
 selected_method = st.sidebar.radio("Select Scoring Method:", list(ELO_FILES.keys()))
@@ -277,3 +278,32 @@ elif app_mode == "Head2Head Prediction":
 
     # get the most likely outcome for the match
     getMostPossibleOutcomes(frame_win_prob, match_length)
+
+elif app_mode == "Next Matches Predictions":
+    currentTournamentName = "2026 World Open"
+    st.title(f"Next Matches of {currentTournamentName} Predictions")
+    st.markdown(
+        """
+        | Player 1 | Method A | Method B | Player 2 |
+        |---------------|----|----|---------------|
+        |John Higgins|5-1|5-0|Liam Highfield|
+        |Lei Peifan|5-2|5-3|RayDay|
+        |David Lilley|1-5|0-5|Shaun Murphy|
+        |Umut Dikme|2-5|2-5|Xu Yichen|
+        |Zhou Yuelong|5-1|5-1|He Guoqiang|
+        |Mark Allen|5-0|5-0|Antoni Kowalski|
+        |Jack Lisowski|5-1|5-1|Cheung Ka Wai|
+        |Antony McGill|3-5|3-5|Stuart Bingham|
+        |Chang Bingyu|3-5|1-5|Wu Yize|
+        |Zak Surety|5-1|5-2|Allan Taylor|
+        |Lyu Haotian|0-5|1-5|Kyren Wilson|
+        |Zhao Hanyang|2-5|2-5|Robbie Williams|
+        |Elliot Slessor|5-1|5-1|Daniel Wells|
+        |Matthew Stevens|2-5|3-5|Hossein Vafaei|
+        |David Grace|2-5|3-5|Thepchaiya Un-Nooh|
+        |Marco Fu|5-2|5-3|Iulian Boiko|
+        |Ali Carter|5-1|5-1|Martin O'Donnell|
+        |Aaron Hill|2-5|1-5|Gary Wilson|
+        |Yao Pengcheng|1-5|1-5|Sam Cragie|
+        
+        """)
