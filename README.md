@@ -5,7 +5,7 @@ An automated data pipeline and interactive dashboard designed to track, analyze,
 ## 🚀 Live Demo
 **Check out the live dashboard here:** [https://snooker-elo-score.streamlit.app/]
 
-**Check out my article explaining the math of two methods:**[https://fredfreddo.github.io/2026/03/13/Snooker-ELO-Inspired-Scores-and-Dashboard/]
+**Check out my article explaining the math of two methods:** [https://fredfreddo.github.io/2026/03/13/Snooker-ELO-Inspired-Scores-and-Dashboard/]
 
 ---
 
