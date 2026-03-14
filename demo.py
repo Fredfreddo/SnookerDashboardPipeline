@@ -287,7 +287,7 @@ elif app_mode == "Next Matches Predictions":
         | Player 1 | Method A | Method B | Player 2 |
         |---------------|----|----|---------------|
         |John Higgins|5-1|5-0|Liam Highfield|
-        |Lei Peifan|5-2|5-3|RayDay|
+        |Lei Peifan|5-2|5-3|Ryan Day|
         |David Lilley|1-5|0-5|Shaun Murphy|
         |Umut Dikme|2-5|2-5|Xu Yichen|
         |Zhou Yuelong|5-1|5-1|He Guoqiang|
