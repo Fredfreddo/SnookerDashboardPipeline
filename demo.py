@@ -86,7 +86,7 @@ TRANSLATIONS = {
 }
 
 # Add the Language Toggle at the very top of the sidebar
-lang = st.sidebar.radio("Language / 语言", ["English", "中文(Gemini翻译)"])
+lang = st.sidebar.radio("Language / 语言", ["English", "中文"])
 t = TRANSLATIONS[lang]
 
 # Map internal keys to your actual CSV file names
@@ -370,6 +370,7 @@ if app_mode == t["home"]:
     if lang == "English":
         st.markdown(markdown_en)
     else:
+        st.markdown("本网页中文为Gemini翻译")
         st.markdown(markdown_zh)
 
 # --- 4. VIEW 2: DAILY RANKINGS ---
