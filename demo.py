@@ -85,8 +85,19 @@ TRANSLATIONS = {
     }
 }
 
-# Add the Language Toggle at the very top of the sidebar
-lang = st.sidebar.radio("Language / 语言", ["English", "中文"])
+# --- Check URL for language preference ---
+# In modern Streamlit (v1.30+), we use st.query_params
+query_params = st.query_params
+
+# Default to English (index 0)
+default_lang_index = 0
+
+# If the URL contains ?lang=zh or ?lang=cn, switch to Chinese (index 1)
+if "lang" in query_params and query_params["lang"].lower() in ["zh", "cn", "chinese"]:
+    default_lang_index = 1
+
+# Add the Language Toggle at the very top of the sidebar, using the dynamically chosen index
+lang = st.sidebar.radio("Language / 语言", ["English", "中文"], index=default_lang_index)
 t = TRANSLATIONS[lang]
 
 # Map internal keys to your actual CSV file names
