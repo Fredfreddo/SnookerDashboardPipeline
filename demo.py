@@ -253,11 +253,13 @@ if app_mode == t["home"]:
     Considering all scenarios, the expected number of frames won by player1 and player 2 are:
     
     $$E[F_1] = \sum_{k}{} \sum_{r}^{} k \cdot P(F_1=k,F_2=r)$$
+    
     $$E[F_2] = \sum_{k}{} \sum_{r}^{} r \cdot P(F_1=k,F_2=r)$$
     
     Then the score updates are calculated as:
     
     $$S_1' = S_1 + K \cdot (F_1-E[F_1])$$
+    
     $$S_2' = S_2 + K \cdot (F_2-E[F_2])$$
     
     In this case, there is no match level zero-sum property. Take example of a match where Zhao Xintong beat an amateur player 4-3:
@@ -348,11 +350,13 @@ if app_mode == t["home"]:
     考虑到所有情况，player1 和 player2 预期赢得的局数为：
     
     $$E[F_1] = \sum_{k}{} \sum_{r}^{} k \cdot P(F_1=k,F_2=r)$$
+    
     $$E[F_2] = \sum_{k}{} \sum_{r}^{} r \cdot P(F_1=k,F_2=r)$$
     
     然后分数更新计算如下：
     
     $$S_1' = S_1 + K \cdot (F_1-E[F_1])$$
+    
     $$S_2' = S_2 + K \cdot (F_2-E[F_2])$$
     
     在这种情况下，不存在比赛级别的零和属性。以赵心童 4-3 击败一名业余球员的比赛为例：
