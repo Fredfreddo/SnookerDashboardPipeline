@@ -86,7 +86,7 @@ TRANSLATIONS = {
 }
 
 # Add the Language Toggle at the very top of the sidebar
-lang = st.sidebar.radio("Language / 语言", ["English", "中文(Gemini翻译)"])
+lang = st.sidebar.radio("Language / 语言", ["English", "中文"])
 t = TRANSLATIONS[lang]
 
 # Map internal keys to your actual CSV file names
