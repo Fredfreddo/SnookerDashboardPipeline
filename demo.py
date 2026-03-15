@@ -319,6 +319,7 @@ if app_mode == t["home"]:
     #### 引入 70+ 单杆的数量
     
     $$S_1'' = S_1' + M \cdot (B_1 - G \cdot F_1) $$
+    
     $$S_2'' = S_2' + M \cdot (B_2 - G \cdot F_2) $$
     
     其中：
