@@ -145,7 +145,7 @@ def getMostPossibleOutcomes(prob1, match_length):
         outcomes[f"{k} - {r}"] = (math.comb(k + r - 1, k) * (prob1 ** k) * ((1 - prob1) ** r))
 
     most_likely_outcome = max(outcomes, key=outcomes.get)
-    st.markdown(t["most_likely"].format(outcome=most_likely_outcome, prob=outcomes[most_likely_outcome]))
+    return most_likely_outcome, outcomes[most_likely_outcome]
 
 # --- 2. SIDEBAR CONTROLS ---
 st.sidebar.title(t["nav_title"])
@@ -453,7 +453,7 @@ elif app_mode == t["h2h_pred"]:
     col1, col2 = st.columns(2)
     with col1:
         player1 = st.selectbox(t["select_p1"], all_players, index=all_players.index("Zhao Xintong") if "Zhao Xintong" in all_players else 0)
-        match_length = st.selectbox(t["select_length"], [1, 3, 5, 7, 9, 11, 17, 19, 21, 25, 33, 35], index=0)
+        match_length = st.selectbox(t["select_length"], [1, 3, 5, 7, 9, 11, 17, 19, 21, 25, 33, 35], index=3)
     with col2:
         player2 = st.selectbox(t["select_p2"], all_players, index=all_players.index("Mark Selby") if "Mark Selby" in all_players else 1)
 
@@ -475,7 +475,8 @@ elif app_mode == t["h2h_pred"]:
     frame_win_prob = getFrameWinProbability(score1, score2)
     st.markdown(t["win_prob"].format(p1=player1, p2=player2, prob=frame_win_prob))
 
-    getMostPossibleOutcomes(frame_win_prob, match_length)
+    most_likely_outcome = getMostPossibleOutcomes(frame_win_prob, match_length)
+    st.markdown(t["most_likely"].format(outcome=most_likely_outcome[0], prob=most_likely_outcome[1]))
 
 # --- 7. VIEW 5: NEXT MATCHES PREDICTION ---
 elif app_mode == t["next_match"]:
