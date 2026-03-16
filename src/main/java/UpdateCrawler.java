@@ -277,12 +277,25 @@ public class UpdateCrawler {
                 match.setBreaksPlayer1(player1Breaks);
                 match.setBreaksPlayer2(player2Breaks);
 
-                WebElement player1CountryElement = container.findElement(
-                        By.xpath(".//div[1]/div[2]/div[1]//img"));
-                WebElement player2CountryElement = container.findElement(
-                        By.xpath(".//div[1]/div[2]/div[3]//img"));
-                String player1Country = player1CountryElement.getAttribute("alt").trim();
-                String player2Country = player2CountryElement.getAttribute("alt").trim();
+                String player1Country = "Unknown";
+                String player2Country = "Unknown";
+                try{
+                    WebElement player1CountryElement = container.findElement(
+                            By.xpath(".//div[1]/div[2]/div[1]//img"));
+                    player1Country = player1CountryElement.getAttribute("alt").trim();
+                }
+                catch (Exception e){
+                    System.out.println("Country not found!");
+                }
+                try {
+                    WebElement player2CountryElement = container.findElement(
+                            By.xpath(".//div[1]/div[2]/div[3]//img"));
+                    player2Country = player2CountryElement.getAttribute("alt").trim();
+                }
+                catch (Exception e){
+                    System.out.println("Country not found!");
+                }
+
                 match.setPlayer1Country(player1Country);
                 match.setPlayer2Country(player2Country);
 

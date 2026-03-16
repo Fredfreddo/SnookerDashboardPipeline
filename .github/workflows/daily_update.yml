@@ -38,6 +38,14 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      # set python with pandas for generatePlayerList.py
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Install Python dependencies
+        run: pip install pandas
+
       # Step 3: Compile the Java code
       - name: Compile Java
         run: mvn clean compile
@@ -62,7 +70,7 @@ jobs:
 
       # run generatePlayerList.py
       - name: update player list
-        run: python3 generatePlayerList.py
+        run: python generatePlayerList.py
 
       # Step 6: Commit and Push the new CSVs back to GitHub
       - name: Commit Updated CSVs and json files
