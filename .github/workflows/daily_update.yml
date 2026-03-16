@@ -11,6 +11,7 @@ on:
     paths-ignore:
       - '*.csv' # Prevents infinite loops when the bot pushes the updated CSVs
       - '*.py'
+      - '*.txt'
       - 'README.md'
 
   # 2. Allows you to manually click a "Run" button in the GitHub UI
@@ -44,6 +45,10 @@ jobs:
       # NEW: Run the web scraper first to update the JSON files
       - name: Run Web Scraper (UpdateCrawler)
         run: mvn exec:java -Dexec.mainClass="UpdateCrawler"
+
+      # Run java to get next matches
+      - name: Run UpcomingMatchScraper
+        run: mvn exec:java -Dexec.mainClass="UpcomingMatchScraper"
 
       # Step 4: Run the first algorithm (Method A)
       - name: Run JsonProcessor (Standard)

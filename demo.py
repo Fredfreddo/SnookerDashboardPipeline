@@ -112,15 +112,19 @@ def load_data(filename):
     df['date'] = pd.to_datetime(df['date'])
     return df
 
-def apply_decay_recovery(player, current_score):
+def apply_decay_recovery(player, current_score, today=pd.Timestamp.now(), printOptions=False):
     stats = historical_stats.loc[player]
     average_score = stats['average_score']
     highest_score = stats['highest_score']
 
     last_match_date = df[df['name'] == player]['date'].max()
-    days_inactive = (pd.Timestamp.now() - last_match_date).days
+    # today could be a string as "yyyy-mm-dd", convert to Timestamp if needed
+    if isinstance(today, str):
+        today = pd.to_datetime(today)
+    days_inactive = (today - last_match_date).days
 
-    st.markdown(t["inactive_days"].format(days=days_inactive, player=player))
+    if printOptions:
+        st.markdown(t["inactive_days"].format(days=days_inactive, player=player))
 
     if days_inactive > 7:
         if current_score < 1500 and current_score < highest_score:
@@ -192,6 +196,8 @@ if app_mode == t["home"]:
     markdown_en = r"""
     ## About This Dashboard
     This dashboard provides a statistical analysis of professional snooker player's live form. Two different methods are provided (explained below). You may use the sidebar to choose the methods and what to see. This scoring algorithm may serve as a baseline to predict matches outcomes.
+
+    Data is updated daily at 2am UTC
     
     ## The Methodologies
     ### Method A
@@ -290,6 +296,8 @@ if app_mode == t["home"]:
     ## 关于此仪表板
     该仪表板提供了对职业斯诺克球员即时状态的统计分析。提供了两种不同的方法（如下所述）。您可以使用侧边栏选择方法和查看内容。此评分算法可作为预测比赛结果的基准。
     
+    数据每天凌晨2点UTC更新
+
     ## 方法论
     ### 方法 A (标准版)
 
@@ -473,8 +481,8 @@ elif app_mode == t["h2h_pred"]:
         historical_stats = df.groupby('name').agg({'score': ['mean', 'max']})
         historical_stats.columns = ['average_score', 'highest_score']
 
-        score1 = apply_decay_recovery(player1, score1)
-        score2 = apply_decay_recovery(player2, score2)
+        score1 = apply_decay_recovery(player1, score1, printOptions=True)
+        score2 = apply_decay_recovery(player2, score2, printOptions=True)
 
         st.markdown(t["adjusted_scores"].format(p1=player1, p2=player2, s1=score1, s2=score2))
 
@@ -486,34 +494,54 @@ elif app_mode == t["h2h_pred"]:
 
 # --- 7. VIEW 5: NEXT MATCHES PREDICTION ---
 elif app_mode == t["next_match"]:
-    currentTournamentName = "2026 World Open"
+    currentTournamentName = ""
+    # get currentTournamentName from tourName.txt
+    try:
+        with open("tourName.txt", "r", encoding='utf-8') as f:
+            currentTournamentName = f.read().strip()
+    except FileNotFoundError:
+        currentTournamentName = "Upcoming Tournament"
     st.title(t["next_match_title"].format(tournament=currentTournamentName))
 
     # We dynamically inject the translated headers into the markdown table string
     table_header = f"| {t['p1_header']} | {t['method_a_name']} | {t['method_b_name']} | {t['p2_header']} |"
 
+
+    # read "upcoming_matches.csv"
+    upcoming_df = pd.read_csv("upcoming_matches.csv")
+    # it's formatted as: Player 1,Player 2,Best Of,Date
+    # loop to get row
+    tableStr = ""
+    for index, row in upcoming_df.iterrows():
+        p1 = row['Player 1']
+        p2 = row['Player 2']
+        best_of = int(row['Best Of'])
+        date = row['Date']
+
+        # get latest scores for p1 and p2
+        score1 = df[df['name'] == p1].tail(1)['score'].values[0] if not df[df['name'] == p1].empty else 1500
+        score2 = df[df['name'] == p2].tail(1)['score'].values[0] if not df[df['name'] == p2].empty else 1500
+
+        # for B
+        historical_stats = df.groupby('name').agg({'score': ['mean', 'max']})
+        historical_stats.columns = ['average_score', 'highest_score']
+
+        score1B = apply_decay_recovery(p1, score1, today=date)
+        score2B = apply_decay_recovery(p2, score2, today=date)
+        
+        prob_a = getFrameWinProbability(score1, score2)
+        prob_b = getFrameWinProbability(score1B, score2B)
+        most_likely_outcomeA = getMostPossibleOutcomes(prob_a, best_of)
+        most_likely_outcomeB = getMostPossibleOutcomes(prob_b, best_of)
+
+        # get rid of trailing "()" in the most likely outcome for better display
+        most_likely_outcomeA = most_likely_outcomeA[0].split("(")[0]
+        most_likely_outcomeB = most_likely_outcomeB[0].split("(")[0]
+        
+        # add markdown formatted as |---------------|----|----|---------------|
+        # with p1, most_likely_outcomeA, most_likely_outcomeB, p2
+        
+        tableStr += f"| **{p1}** | {most_likely_outcomeA} | {most_likely_outcomeB} | **{p2}** |" + "\n"
     st.markdown(
-        f"""
-        {table_header}
-        |---------------|----|----|---------------|
-        |John Higgins|5-1|5-0|Liam Highfield|
-        |Lei Peifan|5-2|5-3|Ryan Day|
-        |David Lilley|1-5|0-5|Shaun Murphy|
-        |Umut Dikme|2-5|2-5|Xu Yichen|
-        |Zhou Yuelong|5-1|5-1|He Guoqiang|
-        |Mark Allen|5-0|5-0|Antoni Kowalski|
-        |Jack Lisowski|5-1|5-1|Cheung Ka Wai|
-        |Antony McGill|3-5|3-5|Stuart Bingham|
-        |Chang Bingyu|3-5|1-5|Wu Yize|
-        |Zak Surety|5-1|5-2|Allan Taylor|
-        |Lyu Haotian|0-5|1-5|Kyren Wilson|
-        |Zhao Hanyang|2-5|2-5|Robbie Williams|
-        |Elliot Slessor|5-1|5-1|Daniel Wells|
-        |Matthew Stevens|2-5|3-5|Hossein Vafaei|
-        |David Grace|2-5|3-5|Thepchaiya Un-Nooh|
-        |Marco Fu|5-2|5-3|Iulian Boiko|
-        |Ali Carter|5-1|5-1|Martin O'Donnell|
-        |Aaron Hill|2-5|1-5|Gary Wilson|
-        |Yao Pengcheng|1-5|1-5|Sam Cragie|
-        """
+        f"{table_header}\n|---------------|----|----|---------------|" + "\n" +tableStr
     )
