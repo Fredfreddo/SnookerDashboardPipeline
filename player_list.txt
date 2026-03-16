@@ -186,6 +186,7 @@ Ali Carter
 Si Jiahui
 Igor Figueiredo
 Sahil Nayyar
+Liu Yang
 Xu Si
 Josh Mulholland
 Shaun Liu
@@ -232,6 +233,7 @@ Patrick Whelan
 Stuart Carrington
 Lee Stephens
 Ross Muir
+Fuyuan Han
 John Astley
 Steven Wardropper
 Siripaporn Nuanthakhamjan
