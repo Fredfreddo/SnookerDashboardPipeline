@@ -60,6 +60,10 @@ jobs:
         # IMPORTANT: Replace 'org.example' with your actual package name
         run: mvn exec:java -Dexec.mainClass="JsonProcessorO3"
 
+      # run generatePlayerList.py
+      - name: update player list
+        run: python3 generatePlayerList.py
+
       # Step 6: Commit and Push the new CSVs back to GitHub
       - name: Commit Updated CSVs and json files
         run: |
@@ -68,7 +72,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
           # Stage the two specific CSV files
-          git add *.json players_score_history.csv O3players_score_history.csv
+          git add *.json players_score_history.csv O3players_score_history.csv upcoming_matches.csv player_list.txt
           
           # Check if there are actual changes. If yes, commit and push. If no, skip gracefully.
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-calculate Elo scores from updated JSONs" && git push)
