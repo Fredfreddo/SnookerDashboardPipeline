@@ -188,7 +188,7 @@ public class UpcomingMatchScraper {
         // 3, remove middle name
         StringBuilder shortened = new StringBuilder();
         if (names.length > 2) {
-            shortened.append(names[2]).append(" ").append(names[0]);
+            shortened.append(names[0]).append(" ").append(names[2]);
         }
         String shortenedName = shortened.toString();
         if (standardNames.contains(shortenedName)) {

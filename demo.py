@@ -113,9 +113,12 @@ def load_data(filename):
     return df
 
 def apply_decay_recovery(player, current_score, today=pd.Timestamp.now(), printOptions=False):
-    stats = historical_stats.loc[player]
-    average_score = stats['average_score']
-    highest_score = stats['highest_score']
+    try:
+        stats = historical_stats.loc[player]
+        average_score = stats['average_score']
+        highest_score = stats['highest_score']
+    except KeyError:
+        return 1500  # If player not found in historical stats, return default score
 
     last_match_date = df[df['name'] == player]['date'].max()
     # today could be a string as "yyyy-mm-dd", convert to Timestamp if needed
