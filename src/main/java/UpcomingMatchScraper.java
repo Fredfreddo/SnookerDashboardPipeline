@@ -97,32 +97,38 @@ public class UpcomingMatchScraper {
                 List<WebElement> playerLinks = row.findElements(By.xpath(".//a[contains(@href, 'player')]"));
                 if (playerLinks.size() >= 2) {
 
-                    // On snooker.org, the date is usually in the first TD of the row
-                    WebElement dateElement = row.findElement(By.xpath(".//span[@class='scheduled']"));
-                    //String dateString = dateElement.getText();
-                    currentDate = dateElement.getText();
-                    // change date into "yyyy-mm-dd" format
-                    String fullDateStr = currentDate + " " + year;
-                    // 2. Define the input format
-                    // Use Locale.ENGLISH to ensure "Mon" and "Mar" are parsed correctly
-                    DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("EEE dd MMM HH:mm yyyy");
-                    // 3. Parse to LocalDateTime
-                    LocalDateTime dateTime = LocalDateTime.parse(fullDateStr, inputFormatter);
-                    // 4. Format to the target string "yyyy-MM-dd"
-                    // Note: Use 'MM' for month. 'mm' represents minutes in Java.
-                    currentDate = dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                    try {
+                        // On snooker.org, the date is usually in the first TD of the row
+                        WebElement dateElement = row.findElement(By.xpath(".//span[@class='scheduled']"));
+                        //String dateString = dateElement.getText();
+                        currentDate = dateElement.getText();
+                        currentDate = currentDate.substring(0, 16).trim(); // Extract "Mon 25 Mar 14:00" part
+                        // change date into "yyyy-mm-dd" format
+                        String fullDateStr = currentDate + " " + year;
+                        // 2. Define the input format
+                        // Use Locale.ENGLISH to ensure "Mon" and "Mar" are parsed correctly
+                        DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("EEE dd MMM HH:mm yyyy");
+                        // 3. Parse to LocalDateTime
+                        LocalDateTime dateTime = LocalDateTime.parse(fullDateStr, inputFormatter);
+                        // 4. Format to the target string "yyyy-MM-dd"
+                        // Note: Use 'MM' for month. 'mm' represents minutes in Java.
+                        currentDate = dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
 
-                    String rawPlayer1 = playerLinks.get(0).getText().trim();
-                    String rawPlayer2 = playerLinks.get(1).getText().trim();
-                    System.out.println("Match between " + rawPlayer1 + " and " + rawPlayer2);
+                        String rawPlayer1 = playerLinks.get(0).getText().trim();
+                        String rawPlayer2 = playerLinks.get(1).getText().trim();
+                        System.out.println("Match between " + rawPlayer1 + " and " + rawPlayer2);
 
-                    // Apply the standardization logic
-                    String player1 = matchPlayerName(rawPlayer1, standardNames);
-                    String player2 = matchPlayerName(rawPlayer2, standardNames);
+                        // Apply the standardization logic
+                        String player1 = matchPlayerName(rawPlayer1, standardNames);
+                        String player2 = matchPlayerName(rawPlayer2, standardNames);
 
-                    writer.printf("\"%s\",\"%s\",%s,\"%s\"%n", player1, player2, currentBestOf, currentDate);
-                    matchCount++;
+                        writer.printf("\"%s\",\"%s\",%s,\"%s\"%n", player1, player2, currentBestOf, currentDate);
+                        matchCount++;
+                    }
+                    catch (Exception e) {
+                        System.out.println("Error processing a match row. Skipping this row.");
+                    }
                 }
             }
 
