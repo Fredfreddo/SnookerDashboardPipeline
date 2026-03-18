@@ -509,7 +509,7 @@ elif app_mode == t["next_match"]:
     st.title(t["next_match_title"].format(tournament=currentTournamentName))
 
     # We dynamically inject the translated headers into the markdown table string
-    table_header = f"| {t['p1_header']} | {t['method_a_name']} | {t['method_b_name']} | {t['p2_header']} |"
+    table_header = f"| {t['p1_header']} | {selected_method} | {t['p2_header']} |"
 
 
     # read "upcoming_matches.csv"
@@ -529,43 +529,32 @@ elif app_mode == t["next_match"]:
         score2 = df[df['name'] == p2].tail(1)['score'].values[0] if not df[df['name'] == p2].empty else 1500
 
         # for B
-        historical_stats = df.groupby('name').agg({'score': ['mean', 'max']})
-        historical_stats.columns = ['average_score', 'highest_score']
+        if selected_method == "Method B":
+            historical_stats = df.groupby('name').agg({'score': ['mean', 'max']})
+            historical_stats.columns = ['average_score', 'highest_score']
 
-        score1B = apply_decay_recovery(p1, score1, today=date)
-        score2B = apply_decay_recovery(p2, score2, today=date)
+            score1B = apply_decay_recovery(p1, score1, today=date)
+            score2B = apply_decay_recovery(p2, score2, today=date)
         
-        prob_a = getFrameWinProbability(score1, score2)
-        prob_b = getFrameWinProbability(score1B, score2B)
-        most_likely_outcomeA = getMostPossibleOutcomes(prob_a, best_of)
-        most_likely_outcomeB = getMostPossibleOutcomes(prob_b, best_of)
+            #prob_a = getFrameWinProbability(score1, score2)
+            prob_b = getFrameWinProbability(score1B, score2B)
+            #most_likely_outcomeA = getMostPossibleOutcomes(prob_a, best_of)
+            most_likely_outcomeB = getMostPossibleOutcomes(prob_b, best_of)
 
-        # get rid of trailing "()" in the most likely outcome for better display
-        most_likely_outcomeA = most_likely_outcomeA[0].split("(")[0]
-        most_likely_outcomeB = most_likely_outcomeB[0].split("(")[0]
-        
+            # get rid of trailing "()" in the most likely outcome for better display
+            #most_likely_outcomeA = most_likely_outcomeA[0].split("(")[0]
+            most_likely_outcomeB = most_likely_outcomeB[0].split("(")[0]
+            tableStr += f"| **{p1}** | {most_likely_outcomeB} | **{p2}** |" + "\n"
+        else:
+            prob_a = getFrameWinProbability(score1, score2)
+            most_likely_outcomeA = getMostPossibleOutcomes(prob_a, best_of)
+            most_likely_outcomeA = most_likely_outcomeA[0].split("(")[0]
+            tableStr += f"| **{p1}** | {most_likely_outcomeA} | **{p2}** |" + "\n"
         # add markdown formatted as |---------------|----|----|---------------|
         # with p1, most_likely_outcomeA, most_likely_outcomeB, p2
         
-        tableStr += f"| **{p1}** | {most_likely_outcomeA} | {most_likely_outcomeB} | **{p2}** |" + "\n"
-
-        # 2. Append the clean data to our list for the CSV
-        """predictions_data.append({
-            "Player 1": p1,
-            "Method A Prediction": most_likely_outcomeA,
-            "Method B Prediction": most_likely_outcomeB,
-            "Player 2": p2,
-            "Date": date
-        })"""
+        #tableStr += f"| **{p1}** | {most_likely_outcomeA} | {most_likely_outcomeB} | **{p2}** |" + "\n"
 
     st.markdown(
-        f"{table_header}\n|---------------|----|----|---------------|" + "\n" +tableStr
+        f"{table_header}\n|---------------|--------|---------------|" + "\n" +tableStr
     )
-    # --- SAVE TO CSV LOGIC ---
-    """output_filename = rf"predictions\{currentTournamentName}_{date}_predictions.csv"
-    
-    # Check if the output file exists
-    needs_save = True
-    if not os.path.exists(output_filename):
-        output_df = pd.DataFrame(predictions_data)
-        output_df.to_csv(output_filename)"""
