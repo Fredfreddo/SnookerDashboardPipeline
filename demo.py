@@ -517,7 +517,7 @@ elif app_mode == t["next_match"]:
     # it's formatted as: Player 1,Player 2,Best Of,Date
     # loop to get row
     tableStr = ""
-    predictions_data = []
+    #predictions_data = []
     for index, row in upcoming_df.iterrows():
         p1 = row['Player 1']
         p2 = row['Player 2']
@@ -550,22 +550,22 @@ elif app_mode == t["next_match"]:
         tableStr += f"| **{p1}** | {most_likely_outcomeA} | {most_likely_outcomeB} | **{p2}** |" + "\n"
 
         # 2. Append the clean data to our list for the CSV
-        predictions_data.append({
+        """predictions_data.append({
             "Player 1": p1,
             "Method A Prediction": most_likely_outcomeA,
             "Method B Prediction": most_likely_outcomeB,
             "Player 2": p2,
             "Date": date
-        })
+        })"""
 
     st.markdown(
         f"{table_header}\n|---------------|----|----|---------------|" + "\n" +tableStr
     )
     # --- SAVE TO CSV LOGIC ---
-    output_filename = rf"predictions\{currentTournamentName}_{date}_predictions.csv"
+    """output_filename = rf"predictions\{currentTournamentName}_{date}_predictions.csv"
     
     # Check if the output file exists
     needs_save = True
     if not os.path.exists(output_filename):
         output_df = pd.DataFrame(predictions_data)
-        output_df.to_csv(output_filename)
+        output_df.to_csv(output_filename)"""

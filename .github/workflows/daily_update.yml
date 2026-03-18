@@ -43,8 +43,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
+          cache: 'pip'
       - name: Install Python dependencies
-        run: pip install pandas
+        run: pip install -r requirements.txt
 
       # Step 3: Compile the Java code
       - name: Compile Java
@@ -72,6 +73,10 @@ jobs:
       - name: update player list
         run: python generatePlayerList.py
 
+      # store today's predictions in a csv file
+      - name: Store Today's Predictions
+        run: python storeTodayPred.py
+
       # Step 6: Commit and Push the new CSVs back to GitHub
       - name: Commit Updated CSVs and json files
         run: |
@@ -80,7 +85,7 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
           # Stage the two specific CSV files
-          git add *.json players_score_history.csv O3players_score_history.csv upcoming_matches.csv player_list.txt
+          git add *.json players_score_history.csv O3players_score_history.csv upcoming_matches.csv player_list.txt predictions/*.csv
           
           # Check if there are actual changes. If yes, commit and push. If no, skip gracefully.
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-calculate Elo scores from updated JSONs" && git push)
