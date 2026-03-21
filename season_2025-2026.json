@@ -6,6 +6,86 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-open/2026/7635",
       "matches": [
         {
+          "player1": "Ronnie O\u0027Sullivan",
+          "player2": "Ryan Day",
+          "player1Score": 5,
+          "player2Score": 0,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-03-20",
+          "breaksPlayer1": [
+            153,
+            110,
+            103,
+            95,
+            62
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Hossein Vafaei",
+          "player1Score": 5,
+          "player2Score": 1,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Iran",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-03-20",
+          "breaksPlayer1": [
+            113,
+            109,
+            88
+          ],
+          "breaksPlayer2": [
+            68
+          ]
+        },
+        {
+          "player1": "Thepchaiya Un-Nooh",
+          "player2": "Gary Wilson",
+          "player1Score": 5,
+          "player2Score": 1,
+          "bestOfFrames": 9,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-03-20",
+          "breaksPlayer1": [
+            99,
+            81,
+            70
+          ],
+          "breaksPlayer2": [
+            75
+          ]
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Mark Allen",
+          "player1Score": 5,
+          "player2Score": 1,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "Northern Ireland",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-03-20",
+          "breaksPlayer1": [
+            140,
+            109,
+            83,
+            77,
+            53
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Mark Allen",
           "player2": "Zhou Yuelong",
           "player1Score": 5,
@@ -128,7 +208,8 @@
             137,
             71,
             70,
-            59
+            59,
+            58
           ]
         },
         {
