@@ -7,6 +7,55 @@
       "matches": [
         {
           "player1": "Ronnie O\u0027Sullivan",
+          "player2": "Wu Yize",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-03-21",
+          "breaksPlayer1": [
+            118,
+            97,
+            89,
+            86,
+            78
+          ],
+          "breaksPlayer2": [
+            86,
+            77,
+            77,
+            53
+          ]
+        },
+        {
+          "player1": "Thepchaiya Un-Nooh",
+          "player2": "Judd Trump",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-03-21",
+          "breaksPlayer1": [
+            134,
+            134,
+            128,
+            57
+          ],
+          "breaksPlayer2": [
+            97,
+            86,
+            59,
+            50
+          ]
+        },
+        {
+          "player1": "Ronnie O\u0027Sullivan",
           "player2": "Ryan Day",
           "player1Score": 5,
           "player2Score": 0,
