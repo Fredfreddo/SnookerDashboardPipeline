@@ -6,6 +6,37 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-open/2026/7635",
       "matches": [
         {
+          "player1": "Thepchaiya Un-Nooh",
+          "player2": "Ronnie O\u0027Sullivan",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-03-22",
+          "breaksPlayer1": [
+            147,
+            132,
+            131,
+            83,
+            82,
+            80,
+            77,
+            50,
+            50
+          ],
+          "breaksPlayer2": [
+            136,
+            124,
+            114,
+            102,
+            73,
+            51
+          ]
+        },
+        {
           "player1": "Ronnie O\u0027Sullivan",
           "player2": "Wu Yize",
           "player1Score": 6,
