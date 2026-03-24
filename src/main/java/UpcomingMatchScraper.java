@@ -87,7 +87,7 @@ public class UpcomingMatchScraper {
                 String rowText = row.getText();
 
                 // Track "Best of X" which snooker.org often puts in sub-headers or round headers
-                WebElement bestOfSpan = row.findElement(By.xpath("//span[contains(@title, 'Best of')]"));
+                WebElement bestOfSpan = row.findElement(By.xpath(".//span[contains(@title, 'Best of')]"));
                 if (bestOfSpan != null) {
                     //String bestOfText = bestOfSpan.getText();
                     currentBestOf = bestOfSpan.getText();
