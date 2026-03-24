@@ -84,8 +84,14 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stage the two specific CSV files
-          git add *.json players_score_history.csv O3players_score_history.csv upcoming_matches.csv player_list.txt predictions/*.csv
-          
-          # Check if there are actual changes. If yes, commit and push. If no, skip gracefully.
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-calculate Elo scores from updated JSONs" && git push)
+          git add -A
+
+          # 2. Check if the staging area has anything in it
+          if [ -n "$(git status --porcelain)" ]; then
+            # 3. If there are changes, commit and push
+            echo "Changes detected, committing and pushing..."
+            git commit -m "Daily update: New matches, predictions, or player list"
+            git push
+          else
+            echo "No changes to commit"
+          fi
