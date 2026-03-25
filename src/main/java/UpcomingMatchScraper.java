@@ -85,17 +85,32 @@ public class UpcomingMatchScraper {
 
             for (WebElement row : rows) {
                 String rowText = row.getText();
+                // System.out.println("Processing row: " + rowText);
 
                 // Track "Best of X" which snooker.org often puts in sub-headers or round headers
-                WebElement bestOfSpan = row.findElement(By.xpath(".//span[contains(@title, 'Best of')]"));
+                WebElement bestOfSpan = null;
+                try {
+                    bestOfSpan = row.findElement(By.xpath(".//span[contains(@title, 'Best of')]"));
+                }
+                catch (Exception e) {
+                    // No "Best of" span in this row, keep currentBestOf unchanged
+                    System.out.println("No 'Best of' info found in this row");
+                }
+
                 if (bestOfSpan != null) {
                     //String bestOfText = bestOfSpan.getText();
                     currentBestOf = bestOfSpan.getText();
                 }
 
                 // If the row has player links, it's a match row
-                List<WebElement> playerLinks = row.findElements(By.xpath(".//a[contains(@href, 'player')]"));
-                if (playerLinks.size() >= 2) {
+                List<WebElement> playerLinks = null;
+                try {
+                    playerLinks = row.findElements(By.xpath(".//a[contains(@href, 'player')]"));
+                }
+                catch (Exception e) {
+                    System.out.println("No 'player' info found in this row");
+                }
+                if (playerLinks != null && playerLinks.size() >= 2) {
 
                     try {
                         // On snooker.org, the date is usually in the first TD of the row
