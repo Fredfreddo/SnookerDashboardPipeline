@@ -2,6 +2,42 @@
   "season": "2025-2026",
   "tournaments": [
     {
+      "name": "2026 Tour Championship",
+      "cuetrackerURL": "https://cuetracker.net/tournaments/tour-championship/2026/7711",
+      "matches": [
+        {
+          "player1": "Judd Trump",
+          "player2": "Mark Allen",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Northern Ireland",
+          "originalIndex": 0,
+          "round": "Last 12",
+          "date": "2026-03-30",
+          "breaksPlayer1": [
+            114,
+            104,
+            100,
+            88,
+            86,
+            71,
+            69,
+            67,
+            59
+          ],
+          "breaksPlayer2": [
+            121,
+            121,
+            79,
+            68,
+            52
+          ]
+        }
+      ]
+    },
+    {
       "name": "2026 World Open",
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-open/2026/7635",
       "matches": [
