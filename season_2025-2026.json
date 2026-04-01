@@ -6,6 +6,61 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/tour-championship/2026/7711",
       "matches": [
         {
+          "player1": "Barry Hawkins",
+          "player2": "Thepchaiya Un-Nooh",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 12",
+          "date": "2026-03-30 - 03-31",
+          "breaksPlayer1": [
+            101,
+            86,
+            79,
+            72,
+            72,
+            68,
+            63
+          ],
+          "breaksPlayer2": [
+            103,
+            67,
+            66,
+            62,
+            50
+          ]
+        },
+        {
+          "player1": "John Higgins",
+          "player2": "Mark Williams",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "Scotland",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 12",
+          "date": "2026-03-31",
+          "breaksPlayer1": [
+            110,
+            84,
+            73,
+            64
+          ],
+          "breaksPlayer2": [
+            121,
+            107,
+            82,
+            76,
+            74,
+            63,
+            59
+          ]
+        },
+        {
           "player1": "Judd Trump",
           "player2": "Mark Allen",
           "player1Score": 10,
@@ -33,6 +88,31 @@
             79,
             68,
             52
+          ]
+        },
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Wu Yize",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 12",
+          "date": "2026-03-30 - 03-31",
+          "breaksPlayer1": [
+            108,
+            84,
+            69,
+            62
+          ],
+          "breaksPlayer2": [
+            84,
+            81,
+            75,
+            74,
+            73
           ]
         }
       ]
