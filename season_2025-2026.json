@@ -6,6 +6,121 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/tour-championship/2026/7711",
       "matches": [
         {
+          "player1": "John Higgins",
+          "player2": "Mark Selby",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "Scotland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-02",
+          "breaksPlayer1": [
+            92,
+            87,
+            78,
+            74,
+            72,
+            61,
+            56,
+            56
+          ],
+          "breaksPlayer2": [
+            131,
+            127,
+            68,
+            54
+          ]
+        },
+        {
+          "player1": "Neil Robertson",
+          "player2": "Barry Hawkins",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "Australia",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-01 - 04-02",
+          "breaksPlayer1": [
+            78,
+            75,
+            75,
+            66,
+            50
+          ],
+          "breaksPlayer2": [
+            98,
+            69,
+            63,
+            59,
+            58,
+            55
+          ]
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Shaun Murphy",
+          "player1Score": 10,
+          "player2Score": 9,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-01",
+          "breaksPlayer1": [
+            140,
+            137,
+            90,
+            86,
+            62,
+            59,
+            58
+          ],
+          "breaksPlayer2": [
+            132,
+            127,
+            96,
+            72,
+            71,
+            69,
+            59,
+            52,
+            51
+          ]
+        },
+        {
+          "player1": "Zhao Xintong",
+          "player2": "Chris Wakelin",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-01 - 04-02",
+          "breaksPlayer1": [
+            134,
+            120,
+            108,
+            103,
+            101,
+            93,
+            70,
+            58,
+            50
+          ],
+          "breaksPlayer2": [
+            76,
+            71,
+            57
+          ]
+        },
+        {
           "player1": "Barry Hawkins",
           "player2": "Thepchaiya Un-Nooh",
           "player1Score": 10,
