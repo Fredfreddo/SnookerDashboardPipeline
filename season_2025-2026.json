@@ -6,6 +6,60 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/tour-championship/2026/7711",
       "matches": [
         {
+          "player1": "Judd Trump",
+          "player2": "Neil Robertson",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Australia",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-04-03",
+          "breaksPlayer1": [
+            113,
+            94,
+            87,
+            87,
+            75,
+            58,
+            54
+          ],
+          "breaksPlayer2": [
+            61,
+            54,
+            52,
+            50
+          ]
+        },
+        {
+          "player1": "Zhao Xintong",
+          "player2": "John Higgins",
+          "player1Score": 10,
+          "player2Score": 1,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-04-04",
+          "breaksPlayer1": [
+            104,
+            85,
+            81,
+            78,
+            74,
+            69,
+            64,
+            62,
+            54
+          ],
+          "breaksPlayer2": [
+            79,
+            50
+          ]
+        },
+        {
           "player1": "John Higgins",
           "player2": "Mark Selby",
           "player1Score": 10,
