@@ -6,6 +6,129 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-championship/2026/7744",
       "matches": [
         {
+          "player1": "Michael Holt",
+          "player2": "Yulu Bai",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 112",
+          "date": "2026-04-08 - 04-09",
+          "breaksPlayer1": [
+            108,
+            96,
+            81,
+            54,
+            54
+          ],
+          "breaksPlayer2": [
+            108,
+            80
+          ]
+        },
+        {
+          "player1": "Yao Pengcheng",
+          "player2": "David Lilley",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 112",
+          "date": "2026-04-08 - 04-09",
+          "breaksPlayer1": [
+            82,
+            82,
+            64,
+            53
+          ],
+          "breaksPlayer2": [
+            83,
+            72,
+            70
+          ]
+        },
+        {
+          "player1": "Michal Szubarczyk",
+          "player2": "Sanderson Lam",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "Poland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 112",
+          "date": "2026-04-08 - 04-09",
+          "breaksPlayer1": [
+            114,
+            93,
+            64,
+            63,
+            55
+          ],
+          "breaksPlayer2": [
+            93,
+            61
+          ]
+        },
+        {
+          "player1": "Wang Xinbo",
+          "player2": "Iulian Boiko",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Ukraine",
+          "originalIndex": 0,
+          "round": "Last 112",
+          "date": "2026-04-08 - 04-09",
+          "breaksPlayer1": [
+            143,
+            117,
+            104,
+            84,
+            66,
+            54,
+            52
+          ],
+          "breaksPlayer2": [
+            56,
+            54
+          ]
+        },
+        {
+          "player1": "Gao Yang",
+          "player2": "Mark Davis",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 112",
+          "date": "2026-04-08 - 04-09",
+          "breaksPlayer1": [
+            122,
+            79,
+            78,
+            65,
+            63,
+            60,
+            56
+          ],
+          "breaksPlayer2": [
+            101,
+            84,
+            64,
+            63,
+            60,
+            53
+          ]
+        },
+        {
           "player1": "Yulu Bai",
           "player2": "Daniel Womersley",
           "player1Score": 10,
@@ -125,6 +248,28 @@
           ]
         },
         {
+          "player1": "Jamie Clarke",
+          "player2": "Haydon Pinhey",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            138,
+            112,
+            91,
+            51
+          ],
+          "breaksPlayer2": [
+            85,
+            74
+          ]
+        },
+        {
           "player1": "Leone Crowley",
           "player2": "Huang Jiahao",
           "player1Score": 10,
@@ -145,6 +290,32 @@
           "breaksPlayer2": [
             63,
             53
+          ]
+        },
+        {
+          "player1": "Umut Dikme",
+          "player2": "Farakh Ajaib",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "Germany",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            130,
+            93,
+            87,
+            86,
+            86,
+            74,
+            65,
+            59,
+            53
+          ],
+          "breaksPlayer2": [
+            85
           ]
         },
         {
@@ -248,6 +419,68 @@
           ]
         },
         {
+          "player1": "Zhao Hanyang",
+          "player2": "Mahmoud El-Hareedy",
+          "player1Score": 10,
+          "player2Score": 3,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Egypt",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            115,
+            93,
+            72
+          ],
+          "breaksPlayer2": [
+            67
+          ]
+        },
+        {
+          "player1": "Liam Highfield",
+          "player2": "Oliver Brown",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            89,
+            73,
+            72,
+            60
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Ashley Hugill",
+          "player2": "David Grace",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            135,
+            69,
+            67,
+            55,
+            52
+          ],
+          "breaksPlayer2": [
+            87,
+            80
+          ]
+        },
+        {
           "player1": "Peter Lines",
           "player2": "Jonas Luz",
           "player1Score": 10,
@@ -265,6 +498,25 @@
             66,
             60,
             56,
+            51
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Mark Lloyd",
+          "player2": "Liu Wenwei",
+          "player1Score": 10,
+          "player2Score": 3,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            56,
+            54,
+            52,
             51
           ],
           "breaksPlayer2": []
@@ -368,6 +620,22 @@
             58,
             53
           ]
+        },
+        {
+          "player1": "Fergal Quinn (II)",
+          "player2": "Hatem Yassen",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "Northern Ireland",
+          "player2Country": "Egypt",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            50
+          ],
+          "breaksPlayer2": []
         },
         {
           "player1": "Bulcsú Révész",
@@ -557,6 +825,35 @@
           "breaksPlayer2": [
             76,
             56
+          ]
+        },
+        {
+          "player1": "Lan Yuhao",
+          "player2": "Chatchapong Nasa",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 144",
+          "date": "2026-04-08",
+          "breaksPlayer1": [
+            132,
+            114,
+            112,
+            88,
+            83,
+            81,
+            79,
+            57,
+            56,
+            51
+          ],
+          "breaksPlayer2": [
+            118,
+            94,
+            58
           ]
         }
       ]
