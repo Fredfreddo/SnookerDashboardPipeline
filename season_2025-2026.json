@@ -6,6 +6,224 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-championship/2026/7744",
       "matches": [
         {
+          "player1": "David Gilbert",
+          "player2": "Aaron Hill",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Ireland",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            141,
+            126,
+            66,
+            61,
+            52,
+            52
+          ],
+          "breaksPlayer2": [
+            72
+          ]
+        },
+        {
+          "player1": "Pang Junxu",
+          "player2": "Jackson Page",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            107,
+            105,
+            104,
+            70,
+            63,
+            61,
+            57,
+            56,
+            54
+          ],
+          "breaksPlayer2": [
+            126,
+            69,
+            62
+          ]
+        },
+        {
+          "player1": "Antoni Kowalski",
+          "player2": "Jamie Jones",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "Poland",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            84,
+            62,
+            59,
+            51
+          ],
+          "breaksPlayer2": [
+            97,
+            66,
+            59,
+            57,
+            56,
+            55
+          ]
+        },
+        {
+          "player1": "Stan Moody",
+          "player2": "Jiang Jun",
+          "player1Score": 10,
+          "player2Score": 9,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            127,
+            113,
+            104,
+            71,
+            71,
+            70,
+            53,
+            51
+          ],
+          "breaksPlayer2": [
+            138,
+            69,
+            53
+          ]
+        },
+        {
+          "player1": "Liam Pullen",
+          "player2": "Noppon Saengkham",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            131,
+            105,
+            83,
+            73,
+            65,
+            58,
+            57,
+            54,
+            54,
+            54,
+            50
+          ],
+          "breaksPlayer2": [
+            90,
+            84,
+            80,
+            75,
+            75,
+            68
+          ]
+        },
+        {
+          "player1": "Matthew Stevens",
+          "player2": "Stuart Bingham",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            86,
+            86,
+            73,
+            65,
+            64,
+            62,
+            61,
+            58,
+            56
+          ],
+          "breaksPlayer2": [
+            89,
+            87,
+            73,
+            61,
+            61,
+            54,
+            50
+          ]
+        },
+        {
+          "player1": "Hossein Vafaei",
+          "player2": "Gao Yang",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "Iran",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            86,
+            70,
+            60,
+            60,
+            57,
+            53
+          ],
+          "breaksPlayer2": [
+            61
+          ]
+        },
+        {
+          "player1": "Zhou Yuelong",
+          "player2": "Michael Holt",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-14",
+          "breaksPlayer1": [
+            109,
+            94,
+            68,
+            65,
+            64,
+            62,
+            59,
+            54
+          ],
+          "breaksPlayer2": [
+            85,
+            81
+          ]
+        },
+        {
           "player1": "Zhang Anda",
           "player2": "Bulcsú Révész",
           "player1Score": 10,
@@ -283,6 +501,29 @@
           ]
         },
         {
+          "player1": "Jamie Jones",
+          "player2": "Matthew Selt",
+          "player1Score": 10,
+          "player2Score": 3,
+          "bestOfFrames": 19,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 80",
+          "date": "2026-04-12",
+          "breaksPlayer1": [
+            82,
+            73,
+            68,
+            65,
+            65
+          ],
+          "breaksPlayer2": [
+            93,
+            88
+          ]
+        },
+        {
           "player1": "Jak Jones",
           "player2": "Marco Fu",
           "player1Score": 10,
@@ -309,29 +550,6 @@
             74,
             70,
             59
-          ]
-        },
-        {
-          "player1": "Jamie Jones",
-          "player2": "Matthew Selt",
-          "player1Score": 10,
-          "player2Score": 3,
-          "bestOfFrames": 19,
-          "player1Country": "Wales",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 80",
-          "date": "2026-04-12",
-          "breaksPlayer1": [
-            82,
-            73,
-            68,
-            65,
-            65
-          ],
-          "breaksPlayer2": [
-            93,
-            88
           ]
         },
         {
