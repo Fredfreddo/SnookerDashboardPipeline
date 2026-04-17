@@ -6,6 +6,59 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-championship/2026/7744",
       "matches": [
         {
+          "player1": "Zhang Anda",
+          "player2": "Zak Surety",
+          "player1Score": 10,
+          "player2Score": 3,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            143,
+            134,
+            109,
+            108,
+            105,
+            80,
+            67,
+            64,
+            61
+          ],
+          "breaksPlayer2": [
+            52
+          ]
+        },
+        {
+          "player1": "Ali Carter",
+          "player2": "Anthony McGill",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            106,
+            106,
+            92,
+            82,
+            77,
+            68,
+            50
+          ],
+          "breaksPlayer2": [
+            87,
+            81,
+            72,
+            69
+          ]
+        },
+        {
           "player1": "David Gilbert",
           "player2": "Aaron Hill",
           "player1Score": 10,
@@ -26,6 +79,80 @@
           ],
           "breaksPlayer2": [
             72
+          ]
+        },
+        {
+          "player1": "He Guoqiang",
+          "player2": "Jack Lisowski",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            138,
+            57
+          ],
+          "breaksPlayer2": [
+            90,
+            67,
+            64,
+            52
+          ]
+        },
+        {
+          "player1": "Liam Highfield",
+          "player2": "Oliver Lines",
+          "player1Score": 10,
+          "player2Score": 2,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            126,
+            75,
+            69,
+            60,
+            59,
+            55
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Jak Jones",
+          "player2": "Luca Brecel",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "Wales",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            136,
+            132,
+            114,
+            114,
+            100,
+            78,
+            71,
+            69,
+            66,
+            61
+          ],
+          "breaksPlayer2": [
+            109,
+            79,
+            63,
+            58,
+            52
           ]
         },
         {
@@ -80,6 +207,29 @@
             57,
             56,
             55
+          ]
+        },
+        {
+          "player1": "Peifan Lei",
+          "player2": "Ryan Day",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            73,
+            65,
+            64,
+            56,
+            52,
+            51
+          ],
+          "breaksPlayer2": [
+            125
           ]
         },
         {
@@ -198,6 +348,37 @@
           ]
         },
         {
+          "player1": "Gary Wilson",
+          "player2": "Xu Si",
+          "player1Score": 10,
+          "player2Score": 9,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            136,
+            136,
+            126,
+            81,
+            80,
+            68,
+            66,
+            56,
+            55,
+            54
+          ],
+          "breaksPlayer2": [
+            114,
+            104,
+            100,
+            99,
+            61
+          ]
+        },
+        {
           "player1": "Zhou Yuelong",
           "player2": "Michael Holt",
           "player1Score": 10,
@@ -221,6 +402,32 @@
           "breaksPlayer2": [
             85,
             81
+          ]
+        },
+        {
+          "player1": "Fan Zhengyi",
+          "player2": "Ben Mertens",
+          "player1Score": 10,
+          "player2Score": 4,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 48",
+          "date": "2026-04-15",
+          "breaksPlayer1": [
+            119,
+            104,
+            100,
+            82,
+            65,
+            58,
+            57,
+            54
+          ],
+          "breaksPlayer2": [
+            140,
+            76
           ]
         },
         {
