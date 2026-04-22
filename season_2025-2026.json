@@ -100,6 +100,7 @@
             91,
             74,
             65,
+            54,
             54
           ]
         },
@@ -156,6 +157,30 @@
           ]
         },
         {
+          "player1": "Kyren Wilson",
+          "player2": "Stan Moody",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-20",
+          "breaksPlayer1": [
+            77,
+            63
+          ],
+          "breaksPlayer2": [
+            110,
+            101,
+            91,
+            84,
+            68,
+            55
+          ]
+        },
+        {
           "player1": "Zhao Xintong",
           "player2": "Liam Highfield",
           "player1Score": 10,
@@ -180,6 +205,31 @@
             55,
             53,
             50
+          ]
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Peifan Lei",
+          "player1Score": 10,
+          "player2Score": 2,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-20 - 04-21",
+          "breaksPlayer1": [
+            116,
+            105,
+            93,
+            92,
+            85,
+            68,
+            67,
+            58
+          ],
+          "breaksPlayer2": [
+            69
           ]
         },
         {
