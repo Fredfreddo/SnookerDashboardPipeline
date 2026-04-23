@@ -133,6 +133,111 @@
           ]
         },
         {
+          "player1": "Shaun Murphy",
+          "player2": "Fan Zhengyi",
+          "player1Score": 10,
+          "player2Score": 9,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-20 - 04-21",
+          "breaksPlayer1": [
+            140,
+            78,
+            74,
+            60,
+            51,
+            50
+          ],
+          "breaksPlayer2": [
+            79,
+            69,
+            66,
+            64,
+            62
+          ]
+        },
+        {
+          "player1": "Ronnie O\u0027Sullivan",
+          "player2": "He Guoqiang",
+          "player1Score": 10,
+          "player2Score": 2,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-21 - 04-22",
+          "breaksPlayer1": [
+            113,
+            113,
+            100,
+            97,
+            86,
+            72,
+            62,
+            52
+          ],
+          "breaksPlayer2": [
+            77
+          ]
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Gary Wilson",
+          "player1Score": 10,
+          "player2Score": 5,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-21",
+          "breaksPlayer1": [
+            128,
+            77,
+            71,
+            69,
+            60
+          ],
+          "breaksPlayer2": [
+            139,
+            77,
+            58
+          ]
+        },
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Liam Pullen",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-21 - 04-22",
+          "breaksPlayer1": [
+            82,
+            72,
+            66,
+            62,
+            62,
+            60,
+            50
+          ],
+          "breaksPlayer2": [
+            121,
+            97,
+            96,
+            63,
+            58,
+            57
+          ]
+        },
+        {
           "player1": "Mark Williams",
           "player2": "Antoni Kowalski",
           "player1Score": 10,
