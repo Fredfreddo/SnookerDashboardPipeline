@@ -185,6 +185,27 @@
           ]
         },
         {
+          "player1": "Mark Selby",
+          "player2": "Jak Jones",
+          "player1Score": 10,
+          "player2Score": 2,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-22",
+          "breaksPlayer1": [
+            78,
+            67,
+            50
+          ],
+          "breaksPlayer2": [
+            90,
+            54
+          ]
+        },
+        {
           "player1": "Judd Trump",
           "player2": "Gary Wilson",
           "player1Score": 10,
@@ -206,6 +227,31 @@
             139,
             77,
             58
+          ]
+        },
+        {
+          "player1": "Hossein Vafaei",
+          "player2": "Si Jiahui",
+          "player1Score": 10,
+          "player2Score": 3,
+          "bestOfFrames": 19,
+          "player1Country": "Iran",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-22 - 04-23",
+          "breaksPlayer1": [
+            105,
+            81,
+            78,
+            68,
+            65,
+            61,
+            60,
+            53
+          ],
+          "breaksPlayer2": [
+            100
           ]
         },
         {
