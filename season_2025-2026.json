@@ -6,6 +6,35 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-championship/2026/7744",
       "matches": [
         {
+          "player1": "Shaun Murphy",
+          "player2": "Xiao Guodong",
+          "player1Score": 13,
+          "player2Score": 3,
+          "bestOfFrames": 25,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-23 - 04-24",
+          "breaksPlayer1": [
+            115,
+            103,
+            103,
+            103,
+            93,
+            79,
+            69,
+            66,
+            64,
+            63,
+            61
+          ],
+          "breaksPlayer2": [
+            74,
+            55
+          ]
+        },
+        {
           "player1": "Mark Allen",
           "player2": "Zhang Anda",
           "player1Score": 10,
@@ -182,6 +211,33 @@
           ],
           "breaksPlayer2": [
             77
+          ]
+        },
+        {
+          "player1": "Neil Robertson",
+          "player2": "Pang Junxu",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "Australia",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-04-22 - 04-23",
+          "breaksPlayer1": [
+            100,
+            81,
+            80,
+            77,
+            72,
+            54,
+            53
+          ],
+          "breaksPlayer2": [
+            122,
+            73,
+            73,
+            54
           ]
         },
         {
