@@ -6,6 +6,65 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/world-championship/2026/7744",
       "matches": [
         {
+          "player1": "Mark Allen",
+          "player2": "Kyren Wilson",
+          "player1Score": 13,
+          "player2Score": 9,
+          "bestOfFrames": 25,
+          "player1Country": "Northern Ireland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-23 - 04-25",
+          "breaksPlayer1": [
+            140,
+            78,
+            78,
+            61,
+            50
+          ],
+          "breaksPlayer2": [
+            112,
+            78,
+            75,
+            71,
+            52,
+            50
+          ]
+        },
+        {
+          "player1": "Barry Hawkins",
+          "player2": "Mark Williams",
+          "player1Score": 13,
+          "player2Score": 9,
+          "bestOfFrames": 25,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-24 - 04-25",
+          "breaksPlayer1": [
+            127,
+            113,
+            89,
+            85,
+            85,
+            73,
+            66,
+            63,
+            59,
+            58
+          ],
+          "breaksPlayer2": [
+            124,
+            75,
+            70,
+            69,
+            66,
+            54
+          ]
+        },
+        {
           "player1": "Shaun Murphy",
           "player2": "Xiao Guodong",
           "player1Score": 13,
