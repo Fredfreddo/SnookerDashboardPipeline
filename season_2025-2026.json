@@ -94,6 +94,38 @@
           ]
         },
         {
+          "player1": "Zhao Xintong",
+          "player2": "Ding Junhui",
+          "player1Score": 13,
+          "player2Score": 9,
+          "bestOfFrames": 25,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-24 - 04-26",
+          "breaksPlayer1": [
+            116,
+            115,
+            108,
+            87,
+            77,
+            64,
+            61,
+            59
+          ],
+          "breaksPlayer2": [
+            81,
+            80,
+            76,
+            69,
+            69,
+            62,
+            58,
+            54
+          ]
+        },
+        {
           "player1": "Mark Allen",
           "player2": "Zhang Anda",
           "player1Score": 10,
