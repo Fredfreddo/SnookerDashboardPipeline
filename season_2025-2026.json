@@ -131,6 +131,73 @@
           ]
         },
         {
+          "player1": "Neil Robertson",
+          "player2": "Chris Wakelin",
+          "player1Score": 13,
+          "player2Score": 7,
+          "bestOfFrames": 25,
+          "player1Country": "Australia",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-25 - 04-27",
+          "breaksPlayer1": [
+            104,
+            101,
+            82,
+            66,
+            65,
+            65,
+            65,
+            59,
+            57
+          ],
+          "breaksPlayer2": [
+            77,
+            73,
+            50
+          ]
+        },
+        {
+          "player1": "Hossein Vafaei",
+          "player2": "Judd Trump",
+          "player1Score": 13,
+          "player2Score": 12,
+          "bestOfFrames": 25,
+          "player1Country": "Iran",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-04-25 - 04-27",
+          "breaksPlayer1": [
+            106,
+            91,
+            82,
+            77,
+            70,
+            66,
+            65,
+            65,
+            57,
+            55,
+            53
+          ],
+          "breaksPlayer2": [
+            115,
+            100,
+            94,
+            77,
+            76,
+            76,
+            74,
+            65,
+            64,
+            59,
+            59,
+            58
+          ]
+        },
+        {
           "player1": "Zhao Xintong",
           "player2": "Ding Junhui",
           "player1Score": 13,
