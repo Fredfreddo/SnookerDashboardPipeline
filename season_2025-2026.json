@@ -7,6 +7,78 @@
       "matches": [
         {
           "player1": "Mark Allen",
+          "player2": "Barry Hawkins",
+          "player1Score": 13,
+          "player2Score": 11,
+          "bestOfFrames": 25,
+          "player1Country": "Northern Ireland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-28 - 04-29",
+          "breaksPlayer1": [
+            138,
+            131,
+            104,
+            64,
+            59,
+            59,
+            58,
+            55,
+            51
+          ],
+          "breaksPlayer2": [
+            140,
+            114,
+            96,
+            89,
+            83,
+            75,
+            72,
+            70,
+            69,
+            63,
+            58,
+            50
+          ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Zhao Xintong",
+          "player1Score": 13,
+          "player2Score": 10,
+          "bestOfFrames": 25,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-04-28 - 04-29",
+          "breaksPlayer1": [
+            96,
+            90,
+            80,
+            70,
+            69,
+            69,
+            65,
+            60,
+            59,
+            59
+          ],
+          "breaksPlayer2": [
+            122,
+            117,
+            81,
+            71,
+            67,
+            58,
+            57,
+            56,
+            55
+          ]
+        },
+        {
+          "player1": "Mark Allen",
           "player2": "Kyren Wilson",
           "player1Score": 13,
           "player2Score": 9,
