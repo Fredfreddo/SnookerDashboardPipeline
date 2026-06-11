@@ -1,5 +1,11 @@
 {
   "season": "2026-2027",
-  "tournaments": [],
+  "tournaments": [
+    {
+      "name": "2026 Wuhan Open",
+      "cuetrackerURL": "https://cuetracker.net/tournaments/wuhan-open/2026/7889",
+      "matches": []
+    }
+  ],
   "cuetrackerURL": "https://cuetracker.net/seasons/2026-2027"
 }
