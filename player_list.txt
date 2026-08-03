@@ -4,6 +4,7 @@ Thor Chuan Leong
 Qiu Lei
 Liu Wenwei
 David Gilbert
+Brian Ochoiski
 Mark Allen
 Jack O'Brien
 Hossein Vafaei
@@ -12,6 +13,8 @@ Zhang Hao
 Andy Lee
 Kyren Wilson
 Kreishh Gurbaxani
+Chen Ruifu
+Luke Pinches
 Haydon Pinhey
 Alex Taubman
 Hamza Ilyas
@@ -26,10 +29,12 @@ Connor Benzey
 Haris Tahir
 Abdullah Alotayyani
 Umut Dikme
+Zhang Yang
 Ali Al Obaidly
 Yulu Bai
 Andrew Pagett
 Jake Crofts
+Paul Norris
 Callum Beresford
 Fergal Quinn (II)
 Cody Turner
@@ -55,6 +60,7 @@ Halim Hussain
 Antoni Kowalski
 Kayden Brierley
 Mohamed Elkhayat
+Luo Zetao
 Scott Donaldson
 Wang Yuchen
 Alfie Burden
@@ -65,6 +71,7 @@ Mohammed Shehab
 Marco Fu
 Andrew Higginson
 Chris Wakelin
+Zhou Yichen
 Abdulraouf Saigh
 Duane Jones
 Ryan Davies
@@ -75,6 +82,7 @@ Dean Young
 Tom Ford
 Stephen Hendry
 Ian Martin
+Jeff Cundy
 Ali Hussain Ali
 Bulcsú Révész
 Michael Holt
@@ -133,6 +141,7 @@ Zheng Dian
 David Grace
 Robbie Mcguigan
 Zack Richardson
+Sean Maddocks
 Mateusz Baranowski
 Zak Surety
 Farakh Ajaib
@@ -150,6 +159,7 @@ Jiang Jun
 Zak Sheldon
 Akani Songsermsawad
 Aidan Murphy (II)
+Liu Linhao
 Neil Robertson
 Ng On Yee
 Thepchaiya Un-Nooh
@@ -208,7 +218,9 @@ Craig Steadman
 Xu Yichen
 Gerard Greene
 Oliver Sykes
+Thanawat Thirapongpaiboon
 Asif Mukhtar
+Dylan Smith
 Sean McAllister
 Hatem Yassen
 Kaylan Patel
@@ -236,6 +248,7 @@ Stuart Carrington
 Lee Stephens
 Ross Muir
 John Astley
+Panchaya Channoi
 Steven Wardropper
 Siripaporn Nuanthakhamjan
 Mohamed Ibrahim
@@ -249,6 +262,7 @@ Manasawin Phetmalaikul
 Fraser Patrick
 Lukas Kleckers
 Jamie O'Neill
+Yao Dongcheng
 Dominic Dale
 Alex Clenshaw
 Jamie Clarke
@@ -265,7 +279,9 @@ Habib Subah Humood
 Robert Milkins
 Jenson Kendrick
 Aaron Hill
+Phil O'Kane
 Luke Simmonds
+Nattanapong Chaikul
 Andy Hicks
 Shaun Murphy
 Jak Jones
