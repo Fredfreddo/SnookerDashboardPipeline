@@ -6,6 +6,8 @@ import java.time.temporal.ChronoUnit;
 import java.time.format.DateTimeFormatter;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class JsonProcessorO3 {
@@ -283,77 +285,52 @@ public class JsonProcessorO3 {
 
         processor.initializePlayers("rankings_22_23.csv");
 
-        // burn in with 2022-2023 season
-        List<Match> matches2022_2023 = processor.readMatchesFromJson("season_2022-2023.json");
-        processor.processMatches(matches2022_2023);
-        // save the players at this point into csv file "players_after_2022-2023.csv"
-        // with columns "name", "country", "currentFormPoints"
-        try (Writer writer = new FileWriter("O3players_after_2022-2023.csv")) {
-            writer.write("name,country,currentFormPoints\n");
+        List<Path> seasonFiles = SeasonFileUtils.findSeasonFiles(Paths.get("."));
+        if (seasonFiles.isEmpty()) {
+            System.err.println("No season_YYYY-YYYY.json files found.");
+            return;
+        }
+
+        Map<String, Map<String, Double>> pointsBySeason = new LinkedHashMap<>();
+        for (int i = 0; i < seasonFiles.size(); i++) {
+            Path seasonFile = seasonFiles.get(i);
+            String seasonName = SeasonFileUtils.seasonName(seasonFile);
+            processor.processMatches(processor.readMatchesFromJson(seasonFile.toString()));
+
+            Map<String, Double> snapshot = new HashMap<>();
             for (Player player : processor.getPlayers().values()) {
-                writer.write(player.getName() + "," + player.getCountry() + "," + player.getCurrentFormPoints() + "\n");
+                snapshot.put(player.getName(), player.getCurrentFormPoints());
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            pointsBySeason.put(seasonName, snapshot);
 
-        // store a hashmap of players and their points after 2022-2023 season for future use
-        Map<String, Double> playersPointsAfter2022_2023 = new HashMap<>();
-        for (Player player : processor.getPlayers().values()) {
-            playersPointsAfter2022_2023.put(player.getName(), player.getCurrentFormPoints());
-        }
-
-        // 2023-2024 season
-        List<Match> matches2023_2024 = processor.readMatchesFromJson("season_2023-2024.json");
-        processor.processMatches(matches2023_2024);
-
-        // store a hashmap of players and their points after 2023-2024 season for future use
-        Map<String, Double> playersPointsAfter2023_2024 = new HashMap<>();
-        for (Player player : processor.getPlayers().values()) {
-            playersPointsAfter2023_2024.put(player.getName(), player.getCurrentFormPoints());
-        }
-
-        // 2024-2025 season
-        List<Match> matches2024_2025 = processor.readMatchesFromJson("season_2024-2025.json");
-        processor.processMatches(matches2024_2025);
-
-        // store a hashmap of players and their points after 2024-2025 season for future use
-        Map<String, Double> playersPointsAfter2024_2025 = new HashMap<>();
-        for (Player player : processor.getPlayers().values()) {
-            playersPointsAfter2024_2025.put(player.getName(), player.getCurrentFormPoints());
-        }
-
-        // 2025-2026 season
-        List<Match> matches2025_2026 = processor.readMatchesFromJson("season_2025-2026.json");
-        processor.processMatches(matches2025_2026);
-
-        // store a hashmap of players and their points after 2025-2026 season for future use
-        Map<String, Double> playersPointsAfter2025_2026 = new HashMap<>();
-        for (Player player : processor.getPlayers().values()) {
-            playersPointsAfter2025_2026.put(player.getName(), player.getCurrentFormPoints());
+            if (i == 0) {
+                writePlayersSnapshot(processor, "O3players_after_" + seasonName + ".csv");
+            }
         }
 
         processor.deleteBannedPlayers();
 
-        System.out.println("After processing 2025-2026 season:");
+        String latestSeason = SeasonFileUtils.seasonName(seasonFiles.get(seasonFiles.size() - 1));
+        System.out.println("After processing " + latestSeason + " season:");
         System.out.println("There are " + processor.getPlayers().size() + " unique players in total.");
-        System.out.println("Players after 2025-2026 season:");
+        System.out.println("Players after " + latestSeason + " season:");
         // print out players and their points, sorted by points from highest to lowest
         processor.getPlayers().values().stream()
                 .sorted(Comparator.comparingDouble(Player::getCurrentFormPoints).reversed())
                 .forEach(player -> System.out.println(player.getName() + " (" + player.getCountry() + "): " + player.getCurrentFormPoints()));
 
-        // write a file "players_final.csv" with columns "name", "country", "currentFormPointsAfter2022_2023", "currentFormPointsAfter2023_2024", "currentFormPointsAfter2024_2025", "currentFormPointsAfter2025_2026"
         try (Writer writer = new FileWriter("O3players_final.csv")) {
-            writer.write("name,country,currentFormPointsAfter2022_2023,currentFormPointsAfter2023_2024,currentFormPointsAfter2024_2025,currentFormPointsAfter2025_2026\n");
+            writer.write("name,country");
+            for (String seasonName : pointsBySeason.keySet()) {
+                writer.write("," + SeasonFileUtils.csvColumnName(seasonName));
+            }
+            writer.write("\n");
             for (Player player : processor.getPlayers().values()) {
-                String name = player.getName();
-                String country = player.getCountry();
-                double pointsAfter2022_2023 = playersPointsAfter2022_2023.getOrDefault(name, 1500.0);
-                double pointsAfter2023_2024 = playersPointsAfter2023_2024.getOrDefault(name, 1500.0);
-                double pointsAfter2024_2025 = playersPointsAfter2024_2025.getOrDefault(name, 1500.0);
-                double pointsAfter2025_2026 = playersPointsAfter2025_2026.getOrDefault(name, 1500.0);
-                writer.write(name + "," + country + "," + pointsAfter2022_2023 + "," + pointsAfter2023_2024 + "," + pointsAfter2024_2025 + "," + pointsAfter2025_2026 + "\n");
+                writer.write(player.getName() + "," + player.getCountry());
+                for (Map<String, Double> snapshot : pointsBySeason.values()) {
+                    writer.write("," + snapshot.getOrDefault(player.getName(), 1500.0));
+                }
+                writer.write("\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -376,6 +353,17 @@ public class JsonProcessorO3 {
             e.printStackTrace();
         }
 
+    }
+
+    private static void writePlayersSnapshot(JsonProcessorO3 processor, String fileName) {
+        try (Writer writer = new FileWriter(fileName)) {
+            writer.write("name,country,currentFormPoints\n");
+            for (Player player : processor.getPlayers().values()) {
+                writer.write(player.getName() + "," + player.getCountry() + "," + player.getCurrentFormPoints() + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 

@@ -1,5 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +21,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 public class UpdateCrawler {
@@ -33,7 +35,9 @@ public class UpdateCrawler {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--window-size=1920,1080");
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         driver = new ChromeDriver(options);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 10);
     }
 
@@ -73,10 +77,13 @@ public class UpdateCrawler {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("table")));
             List<WebElement> tournamentAnchors = driver.findElements(
                     By.xpath("//a[contains(@href, '/tournaments/')]"));
+            Set<String> seenTournamentUrls = new HashSet<>();
             for  (WebElement anchor : tournamentAnchors) {
                 String tournamentURL = anchor.getAttribute("href");
-                String tournamentName = anchor.getText();
-                if (!tournamentName.contains("Q School") && !tournamentName.contains("6-Reds")){
+                String tournamentName = anchor.getText().trim();
+                if (isQualifiedTournament(tournamentName)
+                        && tournamentURL != null
+                        && seenTournamentUrls.add(tournamentURL)) {
                     Tournament tournament = new Tournament();
                     tournament.setName(tournamentName);
                     tournament.setCuetrackerURL(tournamentURL);
@@ -88,6 +95,14 @@ public class UpdateCrawler {
             e.printStackTrace();
         }
         return season;
+    }
+
+    static boolean isQualifiedTournament(String tournamentName) {
+        if (tournamentName == null || tournamentName.trim().isEmpty()) {
+            return false;
+        }
+        String normalizedName = tournamentName.toLowerCase(Locale.ROOT);
+        return !normalizedName.contains("q school") && !normalizedName.contains("6-reds");
     }
 
     public void processTournament(Season season){
@@ -326,84 +341,78 @@ public class UpdateCrawler {
             return;
         }
 
-        String seasonUrl = "https://cuetracker.net/seasons/" + seasonName;
-        try {
-            driver.get(seasonUrl);
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("table")));
-            List<WebElement> tournamentAnchors = driver.findElements(
-                    By.xpath("//a[contains(@href, '/tournaments/')]"));
-            for  (WebElement anchor : tournamentAnchors) {
-                String tournamentURL = anchor.getAttribute("href");
-                String tournamentName = anchor.getText();
-                if (!tournamentName.contains("Q School") && !tournamentName.contains("6-Reds")){
-                    Tournament latestTournament = new Tournament();
-                    latestTournament.setName(tournamentName);
-                    latestTournament.setCuetrackerURL(tournamentURL);
-
-                    if (latestTournament == null) {
-                        System.out.println("No valid tournaments found on the season page.");
-                        return;
-                    }
-
-                    System.out.println("Latest tournament found: " + latestTournament.getName());
-
-                    // process latest tournament
-                    processSingleTournament(latestTournament);
-
-                    // remove and replace
-                    if (existingSeason.getTournaments() != null) {
-                        // Remove the old entry of this tournament if it exists (matching by name)
-                        existingSeason.getTournaments().removeIf(t ->
-                                t.getName() != null && t.getName().equals(latestTournament.getName())
-                        );
-                    } else {
-                        existingSeason.setTournaments(new ArrayList<>());
-                    }
-
-                    // Add the freshly scraped tournament to the beginning of the list
-                    existingSeason.getTournaments().add(0, latestTournament);
-
-                    // write file
-                    try (Writer writer = new FileWriter(jsonFile)) {
-                        gson.toJson(existingSeason, writer);
-                        System.out.println("Successfully updated JSON file: " + jsonFile);
-                    } catch (Exception writeException) {
-                        System.err.println("Failed to write updated data to JSON file.");
-                        writeException.printStackTrace();
-                    }
-
-                    break;
-                    }
-                }
-        }
-        catch (Exception e) {
-            System.err.println("Error navigating CueTracker or scraping data.");
-            e.printStackTrace();
+        Season refreshedSeason = getNewSeason(seasonName);
+        if (refreshedSeason.getTournaments().isEmpty()) {
+            System.err.println("No qualifying tournaments found; keeping the existing season file unchanged.");
             return;
+        }
+
+        Map<String, Tournament> existingTournaments = new HashMap<>();
+        if (existingSeason.getTournaments() != null) {
+            for (Tournament tournament : existingSeason.getTournaments()) {
+                existingTournaments.put(tournamentKey(tournament), tournament);
+            }
+        }
+
+        for (Tournament tournament : refreshedSeason.getTournaments()) {
+            processSingleTournament(tournament);
+
+            Tournament previous = existingTournaments.get(tournamentKey(tournament));
+            if (tournament.getMatches().isEmpty()
+                    && previous != null
+                    && previous.getMatches() != null
+                    && !previous.getMatches().isEmpty()) {
+                System.out.println("Keeping previously scraped matches for " + tournament.getName()
+                        + " because the refresh returned no matches.");
+                for (Match match : previous.getMatches()) {
+                    tournament.addMatch(match);
+                }
+            }
+        }
+
+        try (Writer writer = new FileWriter(jsonFile)) {
+            gson.toJson(refreshedSeason, writer);
+            System.out.println("Successfully refreshed " + refreshedSeason.getTournaments().size()
+                    + " tournaments in " + jsonFile);
+        } catch (Exception writeException) {
+            System.err.println("Failed to write updated data to JSON file.");
+            writeException.printStackTrace();
         }
     }
 
-    public static void main(String[] args) {
-        UpdateCrawler updateCrawler = new UpdateCrawler();
-        String currentSeason = updateCrawler.decideCurrentSeason();
-        //System.out.println(currentSeason);
-        //System.out.println(updateCrawler.checkSeasonFile(currentSeason));
-        if (!updateCrawler.checkSeasonFile(currentSeason)){
-            Season newSeason = updateCrawler.getNewSeason(currentSeason);
-            updateCrawler.processTournament(newSeason);
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String fileName = "season_" + currentSeason + ".json";
-            try (Writer writer = new FileWriter(fileName)) {
-                gson.toJson(newSeason, writer);
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-            updateCrawler.endUpdateCrawl();
+    private static String tournamentKey(Tournament tournament) {
+        String url = tournament.getCuetrackerURL();
+        if (url != null && !url.trim().isEmpty()) {
+            return "url:" + url.trim().toLowerCase(Locale.ROOT);
         }
-        else {
-            updateCrawler.updateSeason(currentSeason);
-            updateCrawler.endUpdateCrawl();
+        String name = tournament.getName() == null ? "" : tournament.getName().trim();
+        return "name:" + name.toLowerCase(Locale.ROOT);
+    }
+
+    public static void main(String[] args) {
+        UpdateCrawler updateCrawler = null;
+        try {
+            updateCrawler = new UpdateCrawler();
+            String currentSeason = updateCrawler.decideCurrentSeason();
+            if (!updateCrawler.checkSeasonFile(currentSeason)){
+                Season newSeason = updateCrawler.getNewSeason(currentSeason);
+                updateCrawler.processTournament(newSeason);
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                String fileName = "season_" + currentSeason + ".json";
+                try (Writer writer = new FileWriter(fileName)) {
+                    gson.toJson(newSeason, writer);
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else {
+                updateCrawler.updateSeason(currentSeason);
+            }
+        } finally {
+            if (updateCrawler != null) {
+                updateCrawler.endUpdateCrawl();
+            }
         }
     }
 }
