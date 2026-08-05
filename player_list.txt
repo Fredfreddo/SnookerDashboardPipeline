@@ -4,7 +4,6 @@ Thor Chuan Leong
 Qiu Lei
 Liu Wenwei
 David Gilbert
-Brian Ochoiski
 Mark Allen
 Jack O'Brien
 Hossein Vafaei
@@ -14,7 +13,6 @@ Andy Lee
 Kyren Wilson
 Kreishh Gurbaxani
 Chen Ruifu
-Luke Pinches
 Haydon Pinhey
 Alex Taubman
 Hamza Ilyas
@@ -82,7 +80,6 @@ Dean Young
 Tom Ford
 Stephen Hendry
 Ian Martin
-Jeff Cundy
 Ali Hussain Ali
 Bulcsú Révész
 Michael Holt
@@ -141,7 +138,6 @@ Zheng Dian
 David Grace
 Robbie Mcguigan
 Zack Richardson
-Sean Maddocks
 Mateusz Baranowski
 Zak Surety
 Farakh Ajaib
@@ -220,7 +216,6 @@ Gerard Greene
 Oliver Sykes
 Thanawat Thirapongpaiboon
 Asif Mukhtar
-Dylan Smith
 Sean McAllister
 Hatem Yassen
 Kaylan Patel
