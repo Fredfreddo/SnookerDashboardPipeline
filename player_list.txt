@@ -101,6 +101,7 @@ Mahmoud El-Hareedy
 Jonas Luz
 Saud Albaker
 Mark Williams
+Wu Shengguang
 Hamim Hussain
 Xu Jiarui
 Luca Brecel

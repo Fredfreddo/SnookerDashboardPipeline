@@ -5142,6 +5142,134 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "David Gilbert",
+          "player2": "Ding Junhui",
+          "player1Score": 6,
+          "player2Score": 1,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            113,
+            110,
+            72,
+            69,
+            67,
+            53
+          ],
+          "breaksPlayer2": [
+            76,
+            56
+          ]
+        },
+        {
+          "player1": "Liu Hongyu",
+          "player2": "Barry Hawkins",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            118,
+            111,
+            66,
+            54
+          ],
+          "breaksPlayer2": [
+            68,
+            57
+          ]
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Yao Pengcheng",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            106,
+            100,
+            94,
+            60
+          ],
+          "breaksPlayer2": [
+            101,
+            60,
+            52
+          ]
+        },
+        {
+          "player1": "Zhou Yuelong",
+          "player2": "Mark Williams",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            134,
+            133,
+            115,
+            81,
+            79
+          ],
+          "breaksPlayer2": [
+            97,
+            93,
+            71,
+            53
+          ]
+        },
+        {
+          "player1": "Anthony McGill",
+          "player2": "Wu Shengguang",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "Scotland",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Wildcard",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            72,
+            58
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Hossein Vafaei",
+          "player2": "Liu Linhao",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "Iran",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Wildcard",
+          "date": "2026-08-08",
+          "breaksPlayer1": [
+            86,
+            70
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Zhang Anda",
           "player2": "Daniel Wells",
           "player1Score": 6,
