@@ -5166,6 +5166,30 @@
           ]
         },
         {
+          "player1": "Xiao Guodong",
+          "player2": "Anthony McGill",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-09",
+          "breaksPlayer1": [
+            132,
+            76,
+            60,
+            60,
+            54
+          ],
+          "breaksPlayer2": [
+            82,
+            61,
+            52
+          ]
+        },
+        {
           "player1": "Liu Hongyu",
           "player2": "Barry Hawkins",
           "player1Score": 6,
@@ -5185,6 +5209,71 @@
           "breaksPlayer2": [
             68,
             57
+          ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Matthew Selt",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-09",
+          "breaksPlayer1": [
+            139,
+            132,
+            113,
+            103,
+            61,
+            55
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Ronnie O\u0027Sullivan",
+          "player2": "Jackson Page",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-09",
+          "breaksPlayer1": [
+            100,
+            96,
+            93,
+            70,
+            64
+          ],
+          "breaksPlayer2": [
+            77
+          ]
+        },
+        {
+          "player1": "Noppon Saengkham",
+          "player2": "Judd Trump",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-09",
+          "breaksPlayer1": [
+            120,
+            78,
+            64,
+            51
+          ],
+          "breaksPlayer2": [
+            91,
+            85
           ]
         },
         {
