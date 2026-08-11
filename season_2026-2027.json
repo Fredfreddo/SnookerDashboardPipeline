@@ -5212,6 +5212,25 @@
           ]
         },
         {
+          "player1": "Si Jiahui",
+          "player2": "Jiang Jun",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-10",
+          "breaksPlayer1": [
+            66,
+            56
+          ],
+          "breaksPlayer2": [
+            53
+          ]
+        },
+        {
           "player1": "Shaun Murphy",
           "player2": "Matthew Selt",
           "player1Score": 6,
@@ -5255,6 +5274,28 @@
           ]
         },
         {
+          "player1": "Neil Robertson",
+          "player2": "Chang Bingyu",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Australia",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-10",
+          "breaksPlayer1": [
+            114,
+            77,
+            72
+          ],
+          "breaksPlayer2": [
+            86,
+            65,
+            63
+          ]
+        },
+        {
           "player1": "Noppon Saengkham",
           "player2": "Judd Trump",
           "player1Score": 6,
@@ -5274,6 +5315,53 @@
           "breaksPlayer2": [
             91,
             85
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Pang Junxu",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-10",
+          "breaksPlayer1": [
+            76,
+            75,
+            60,
+            51
+          ],
+          "breaksPlayer2": [
+            90,
+            61,
+            60
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Aaron Hill",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Ireland",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-10",
+          "breaksPlayer1": [
+            77,
+            58,
+            53
+          ],
+          "breaksPlayer2": [
+            86,
+            70,
+            52,
+            51,
+            50
           ]
         },
         {
