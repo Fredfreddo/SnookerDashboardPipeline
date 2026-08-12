@@ -5142,6 +5142,53 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "Zhang Anda",
+          "player2": "Zhao Xintong",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-11",
+          "breaksPlayer1": [
+            134,
+            88,
+            81,
+            53
+          ],
+          "breaksPlayer2": [
+            66,
+            60,
+            60,
+            52,
+            50
+          ]
+        },
+        {
+          "player1": "Stuart Bingham",
+          "player2": "John Higgins",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-11",
+          "breaksPlayer1": [
+            140,
+            80,
+            66,
+            55
+          ],
+          "breaksPlayer2": [
+            66,
+            61
+          ]
+        },
+        {
           "player1": "David Gilbert",
           "player2": "Ding Junhui",
           "player1Score": 6,
@@ -5338,6 +5385,30 @@
             90,
             61,
             60
+          ]
+        },
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Tom Ford",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-08-11",
+          "breaksPlayer1": [
+            110,
+            81,
+            69,
+            68,
+            61
+          ],
+          "breaksPlayer2": [
+            77,
+            76,
+            54
           ]
         },
         {
