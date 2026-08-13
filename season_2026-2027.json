@@ -5142,6 +5142,98 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "David Gilbert",
+          "player2": "Wu Yize",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-12",
+          "breaksPlayer1": [
+            132,
+            122,
+            89,
+            56,
+            54
+          ],
+          "breaksPlayer2": [
+            88,
+            80
+          ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Xiao Guodong",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-12",
+          "breaksPlayer1": [
+            96,
+            63,
+            55
+          ],
+          "breaksPlayer2": [
+            68,
+            60
+          ]
+        },
+        {
+          "player1": "Noppon Saengkham",
+          "player2": "Ronnie O\u0027Sullivan",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-12",
+          "breaksPlayer1": [
+            88,
+            81
+          ],
+          "breaksPlayer2": [
+            95,
+            77,
+            64
+          ]
+        },
+        {
+          "player1": "Zhou Yuelong",
+          "player2": "Liu Hongyu",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-12",
+          "breaksPlayer1": [
+            140,
+            134,
+            119,
+            108,
+            68,
+            66,
+            57
+          ],
+          "breaksPlayer2": [
+            67,
+            62,
+            61,
+            51
+          ]
+        },
+        {
           "player1": "Zhang Anda",
           "player2": "Zhao Xintong",
           "player1Score": 6,
