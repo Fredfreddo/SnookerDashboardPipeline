@@ -5142,6 +5142,44 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "Zhang Anda",
+          "player2": "Chris Wakelin",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-13",
+          "breaksPlayer1": [
+            118,
+            95,
+            79,
+            72,
+            62
+          ],
+          "breaksPlayer2": [
+            58
+          ]
+        },
+        {
+          "player1": "Stuart Bingham",
+          "player2": "Hossein Vafaei",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Iran",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-13",
+          "breaksPlayer1": [
+            73
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "David Gilbert",
           "player2": "Wu Yize",
           "player1Score": 6,
@@ -5186,6 +5224,28 @@
           ]
         },
         {
+          "player1": "Neil Robertson",
+          "player2": "Si Jiahui",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "Australia",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-13",
+          "breaksPlayer1": [
+            102,
+            89,
+            79,
+            57
+          ],
+          "breaksPlayer2": [
+            108,
+            51
+          ]
+        },
+        {
           "player1": "Noppon Saengkham",
           "player2": "Ronnie O\u0027Sullivan",
           "player1Score": 6,
@@ -5204,6 +5264,28 @@
             95,
             77,
             64
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Kyren Wilson",
+          "player1Score": 6,
+          "player2Score": 1,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-08-13",
+          "breaksPlayer1": [
+            138,
+            79,
+            69,
+            65,
+            56
+          ],
+          "breaksPlayer2": [
+            99
           ]
         },
         {
