@@ -5142,6 +5142,97 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "Stuart Bingham",
+          "player2": "Zhang Anda",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-08-14",
+          "breaksPlayer1": [
+            87,
+            60,
+            57
+          ],
+          "breaksPlayer2": [
+            132,
+            65,
+            59
+          ]
+        },
+        {
+          "player1": "Noppon Saengkham",
+          "player2": "Shaun Murphy",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-08-14",
+          "breaksPlayer1": [
+            85,
+            81,
+            67,
+            58,
+            51
+          ],
+          "breaksPlayer2": [
+            51,
+            50
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Neil Robertson",
+          "player1Score": 6,
+          "player2Score": 1,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Australia",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-08-14",
+          "breaksPlayer1": [
+            137,
+            114,
+            97,
+            85,
+            56,
+            51
+          ],
+          "breaksPlayer2": [
+            122
+          ]
+        },
+        {
+          "player1": "Zhou Yuelong",
+          "player2": "David Gilbert",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-08-14",
+          "breaksPlayer1": [
+            100,
+            99,
+            60,
+            60
+          ],
+          "breaksPlayer2": [
+            65,
+            63,
+            50
+          ]
+        },
+        {
           "player1": "Zhang Anda",
           "player2": "Chris Wakelin",
           "player1Score": 6,
