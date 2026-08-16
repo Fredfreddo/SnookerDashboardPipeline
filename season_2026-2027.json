@@ -5142,6 +5142,49 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/china-open/2026/7888",
       "matches": [
         {
+          "player1": "Noppon Saengkham",
+          "player2": "Zhou Yuelong",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "Thailand",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-08-15",
+          "breaksPlayer1": [
+            134,
+            86,
+            56,
+            56
+          ],
+          "breaksPlayer2": [
+            99,
+            74,
+            56
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Stuart Bingham",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-08-15",
+          "breaksPlayer1": [
+            102,
+            74,
+            72
+          ],
+          "breaksPlayer2": [
+            130
+          ]
+        },
+        {
           "player1": "Stuart Bingham",
           "player2": "Zhang Anda",
           "player1Score": 6,
