@@ -3598,6 +3598,26 @@
           ]
         },
         {
+          "player1": "Zhao Xintong",
+          "player2": "Xiao Guodong",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-08-28",
+          "breaksPlayer1": [
+            124,
+            67,
+            57
+          ],
+          "breaksPlayer2": [
+            65
+          ]
+        },
+        {
           "player1": "Chang Bingyu",
           "player2": "Judd Trump",
           "player1Score": 5,
