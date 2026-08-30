@@ -3579,6 +3579,34 @@
       "matches": [
         {
           "player1": "Chang Bingyu",
+          "player2": "Zhao Xintong",
+          "player1Score": 10,
+          "player2Score": 7,
+          "bestOfFrames": 19,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-08-29",
+          "breaksPlayer1": [
+            76,
+            73,
+            67,
+            62,
+            57,
+            57,
+            54,
+            53
+          ],
+          "breaksPlayer2": [
+            83,
+            76,
+            64,
+            60
+          ]
+        },
+        {
+          "player1": "Chang Bingyu",
           "player2": "Ronnie O\u0027Sullivan",
           "player1Score": 6,
           "player2Score": 3,
