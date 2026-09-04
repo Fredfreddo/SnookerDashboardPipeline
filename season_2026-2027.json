@@ -2709,6 +2709,231 @@
           ]
         },
         {
+          "player1": "Lyu Haotian",
+          "player2": "Duane Jones",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            53,
+            53
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "John Higgins",
+          "player2": "Thanawat Thirapongpaiboon",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "Scotland",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-03",
+          "breaksPlayer1": [
+            75,
+            64
+          ],
+          "breaksPlayer2": [
+            109,
+            97
+          ]
+        },
+        {
+          "player1": "Liam Highfield",
+          "player2": "Kyren Wilson",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            120,
+            89,
+            56
+          ],
+          "breaksPlayer2": [
+            78,
+            52
+          ]
+        },
+        {
+          "player1": "Aaron Hill",
+          "player2": "Wang Xinbo",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "Ireland",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-03",
+          "breaksPlayer1": [
+            72
+          ],
+          "breaksPlayer2": [
+            77
+          ]
+        },
+        {
+          "player1": "Jak Jones",
+          "player2": "Chang Bingyu",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Wales",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            111,
+            72
+          ],
+          "breaksPlayer2": [
+            101
+          ]
+        },
+        {
+          "player1": "Mark Joyce",
+          "player2": "Pang Junxu",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Jack Lisowski",
+          "player2": "Ishpreet Singh Chadha",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "India",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            120,
+            112,
+            91,
+            57
+          ],
+          "breaksPlayer2": [
+            67,
+            66
+          ]
+        },
+        {
+          "player1": "Stan Moody",
+          "player2": "Zhang Anda",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-03",
+          "breaksPlayer1": [
+            133,
+            76,
+            58,
+            52
+          ],
+          "breaksPlayer2": [
+            77,
+            52
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Jackson Page",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            113
+          ],
+          "breaksPlayer2": [
+            96
+          ]
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Elliot Slessor",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-03",
+          "breaksPlayer1": [
+            104,
+            84
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Zhao Xintong",
+          "player2": "Michael Holt",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-03",
+          "breaksPlayer1": [
+            139,
+            112,
+            100,
+            63
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Artemijs Zizins",
+          "player2": "He Guoqiang",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Latvia",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-09-02",
+          "breaksPlayer1": [
+            52
+          ],
+          "breaksPlayer2": [
+            63
+          ]
+        },
+        {
           "player1": "Zhang Anda",
           "player2": "Chris Wakelin",
           "player1Score": 4,
@@ -3750,6 +3975,25 @@
           ]
         },
         {
+          "player1": "Jamie Jones",
+          "player2": "Oliver Sykes",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-07-23",
+          "breaksPlayer1": [
+            105,
+            53
+          ],
+          "breaksPlayer2": [
+            69
+          ]
+        },
+        {
           "player1": "Jak Jones",
           "player2": "Matthew Selt",
           "player1Score": 4,
@@ -3767,25 +4011,6 @@
           ],
           "breaksPlayer2": [
             71
-          ]
-        },
-        {
-          "player1": "Jamie Jones",
-          "player2": "Oliver Sykes",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "Wales",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-23",
-          "breaksPlayer1": [
-            105,
-            53
-          ],
-          "breaksPlayer2": [
-            69
           ]
         },
         {
