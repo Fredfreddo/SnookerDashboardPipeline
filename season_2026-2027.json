@@ -2689,6 +2689,48 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/british-open/2026/7958",
       "matches": [
         {
+          "player1": "Jak Jones",
+          "player2": "Judd Trump",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-09-05",
+          "breaksPlayer1": [
+            95,
+            68,
+            59,
+            52
+          ],
+          "breaksPlayer2": [
+            77,
+            54
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Liam Highfield",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-09-05",
+          "breaksPlayer1": [
+            85,
+            53
+          ],
+          "breaksPlayer2": [
+            62,
+            56
+          ]
+        },
+        {
           "player1": "Liam Highfield",
           "player2": "Stan Moody",
           "player1Score": 5,
@@ -2706,6 +2748,27 @@
           ],
           "breaksPlayer2": [
             87
+          ]
+        },
+        {
+          "player1": "Jak Jones",
+          "player2": "Aaron Hill",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "Wales",
+          "player2Country": "Ireland",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-09-04",
+          "breaksPlayer1": [
+            94,
+            70
+          ],
+          "breaksPlayer2": [
+            78,
+            67,
+            63
           ]
         },
         {
