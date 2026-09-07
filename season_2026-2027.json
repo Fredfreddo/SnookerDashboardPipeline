@@ -2489,198 +2489,6 @@
             50
           ],
           "breaksPlayer2": []
-        },
-        {
-          "player1": "Ross Muir",
-          "player2": "Panchaya Channoi",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "Scotland",
-          "player2Country": "Thailand",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [],
-          "breaksPlayer2": [
-            62
-          ]
-        },
-        {
-          "player1": "Florian Nüßle",
-          "player2": "Liu Yang",
-          "player1Score": 4,
-          "player2Score": 2,
-          "bestOfFrames": 7,
-          "player1Country": "Austria",
-          "player2Country": "China",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            66,
-            60
-          ],
-          "breaksPlayer2": [
-            56
-          ]
-        },
-        {
-          "player1": "Phil O\u0027Kane",
-          "player2": "Fergal Quinn (II)",
-          "player1Score": 4,
-          "player2Score": 3,
-          "bestOfFrames": 7,
-          "player1Country": "England",
-          "player2Country": "Northern Ireland",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            62,
-            53
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Craig Steadman",
-          "player2": "Reanne Evans",
-          "player1Score": 4,
-          "player2Score": 0,
-          "bestOfFrames": 7,
-          "player1Country": "England",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Oliver Sykes",
-          "player2": "Sahil Nayyar",
-          "player1Score": 4,
-          "player2Score": 0,
-          "bestOfFrames": 7,
-          "player1Country": "England",
-          "player2Country": "India",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            107,
-            81,
-            66,
-            55
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Thanawat Thirapongpaiboon",
-          "player2": "Zhao Hanyang",
-          "player1Score": 4,
-          "player2Score": 0,
-          "bestOfFrames": 7,
-          "player1Country": "Thailand",
-          "player2Country": "China",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            104,
-            57
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Wang Xinbo",
-          "player2": "Oliver Brown",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "China",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            101,
-            78,
-            61,
-            56
-          ],
-          "breaksPlayer2": [
-            53,
-            53
-          ]
-        },
-        {
-          "player1": "Gao Yang",
-          "player2": "Joshua Thomond",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "China",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            87
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Xu Yichen",
-          "player2": "Vladislav Gradinari",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "China",
-          "player2Country": "Moldova",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            108,
-            51
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Luo Zetao",
-          "player2": "Mahmoud El-Hareedy",
-          "player1Score": 4,
-          "player2Score": 2,
-          "bestOfFrames": 7,
-          "player1Country": "China",
-          "player2Country": "Egypt",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            120,
-            71
-          ],
-          "breaksPlayer2": []
-        },
-        {
-          "player1": "Artemijs Zizins",
-          "player2": "Alfie Burden",
-          "player1Score": 4,
-          "player2Score": 1,
-          "bestOfFrames": 7,
-          "player1Country": "Latvia",
-          "player2Country": "England",
-          "originalIndex": 0,
-          "round": "Last 128",
-          "date": "2026-07-25",
-          "breaksPlayer1": [
-            66
-          ],
-          "breaksPlayer2": [
-            103
-          ]
         }
       ]
     },
@@ -2688,6 +2496,34 @@
       "name": "2026 British Open",
       "cuetrackerURL": "https://cuetracker.net/tournaments/british-open/2026/7958",
       "matches": [
+        {
+          "player1": "Jak Jones",
+          "player2": "Mark Selby",
+          "player1Score": 10,
+          "player2Score": 6,
+          "bestOfFrames": 19,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-09-06",
+          "breaksPlayer1": [
+            65,
+            64,
+            64,
+            62,
+            54,
+            53
+          ],
+          "breaksPlayer2": [
+            139,
+            100,
+            70,
+            67,
+            66,
+            60
+          ]
+        },
         {
           "player1": "Jak Jones",
           "player2": "Judd Trump",
