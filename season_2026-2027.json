@@ -1526,6 +1526,81 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/english-open/2026/7957",
       "matches": [
         {
+          "player1": "Ali Carter",
+          "player2": "Ding Junhui",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-09-12",
+          "breaksPlayer1": [
+            119,
+            90,
+            77,
+            76,
+            74
+          ],
+          "breaksPlayer2": [
+            98,
+            65
+          ]
+        },
+        {
+          "player1": "Mark Williams",
+          "player2": "Shaun Murphy",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-09-12",
+          "breaksPlayer1": [
+            82,
+            69,
+            69,
+            65,
+            57,
+            51
+          ],
+          "breaksPlayer2": [
+            128,
+            61,
+            51,
+            50
+          ]
+        },
+        {
+          "player1": "Ali Carter",
+          "player2": "Zhou Yuelong",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-09-11",
+          "breaksPlayer1": [
+            85,
+            77,
+            74,
+            74,
+            71,
+            52
+          ],
+          "breaksPlayer2": [
+            75,
+            66,
+            60,
+            55
+          ]
+        },
+        {
           "player1": "Ding Junhui",
           "player2": "Kyren Wilson",
           "player1Score": 6,
@@ -1545,6 +1620,53 @@
           "breaksPlayer2": [
             98,
             79
+          ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Judd Trump",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-09-11",
+          "breaksPlayer1": [
+            101,
+            67,
+            65,
+            56
+          ],
+          "breaksPlayer2": [
+            112,
+            110,
+            69,
+            67,
+            60
+          ]
+        },
+        {
+          "player1": "Mark Williams",
+          "player2": "Liam Davies",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-09-11",
+          "breaksPlayer1": [
+            112,
+            95,
+            63
+          ],
+          "breaksPlayer2": [
+            57,
+            55,
+            55
           ]
         },
         {
