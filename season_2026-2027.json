@@ -2,6 +2,84 @@
   "season": "2026-2027",
   "tournaments": [
     {
+      "name": "2026 Northern Ireland Open",
+      "cuetrackerURL": "https://cuetracker.net/tournaments/northern-ireland-open/2026/8125",
+      "matches": [
+        {
+          "player1": "Iulian Boiko",
+          "player2": "Luo Zetao",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "Ukraine",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-13",
+          "breaksPlayer1": [
+            70,
+            65
+          ],
+          "breaksPlayer2": [
+            83,
+            72
+          ]
+        },
+        {
+          "player1": "Alfie Burden",
+          "player2": "Fergal Quinn (II)",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Northern Ireland",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-13",
+          "breaksPlayer1": [
+            78
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Ian Burns",
+          "player2": "Stuart Carrington",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-13",
+          "breaksPlayer1": [
+            63,
+            52
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Sam Craigie",
+          "player2": "Anton Kazakov",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Ukraine",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-13",
+          "breaksPlayer1": [
+            71,
+            52
+          ],
+          "breaksPlayer2": [
+            74
+          ]
+        }
+      ]
+    },
+    {
       "name": "2026 Shenzhen Open",
       "cuetrackerURL": "https://cuetracker.net/tournaments/shenzhen-open/2026/7956",
       "matches": [
@@ -1527,6 +1605,31 @@
       "matches": [
         {
           "player1": "Ali Carter",
+          "player2": "Mark Williams",
+          "player1Score": 9,
+          "player2Score": 6,
+          "bestOfFrames": 17,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-09-13",
+          "breaksPlayer1": [
+            103,
+            64,
+            57,
+            54,
+            54
+          ],
+          "breaksPlayer2": [
+            136,
+            132,
+            61,
+            60
+          ]
+        },
+        {
+          "player1": "Ali Carter",
           "player2": "Ding Junhui",
           "player1Score": 6,
           "player2Score": 2,
@@ -1739,7 +1842,8 @@
           ],
           "breaksPlayer2": [
             59,
-            58
+            58,
+            53
           ]
         },
         {
@@ -2280,7 +2384,8 @@
           ],
           "breaksPlayer2": [
             58,
-            55
+            55,
+            52
           ]
         },
         {
@@ -2567,7 +2672,9 @@
           "breaksPlayer2": [
             86,
             74,
-            68
+            68,
+            63,
+            51
           ]
         },
         {
@@ -3994,6 +4101,7 @@
             101,
             72,
             57,
+            54,
             51
           ],
           "breaksPlayer2": [
@@ -4109,7 +4217,8 @@
           "breaksPlayer1": [
             67,
             65,
-            63
+            63,
+            53
           ],
           "breaksPlayer2": []
         },
@@ -4447,6 +4556,7 @@
             52
           ],
           "breaksPlayer2": [
+            63,
             63
           ]
         },
