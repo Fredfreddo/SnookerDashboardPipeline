@@ -6,6 +6,24 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/scottish-open/2026/8157",
       "matches": [
         {
+          "player1": "Mateusz Baranowski",
+          "player2": "Patrick Whelan",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "Poland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-21",
+          "breaksPlayer1": [
+            65,
+            56,
+            51
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Iulian Boiko",
           "player2": "Mahmoud El-Hareedy",
           "player1Score": 4,
@@ -57,6 +75,24 @@
           "breaksPlayer2": []
         },
         {
+          "player1": "Ashley Carty",
+          "player2": "Mina Awad",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Egypt",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-20",
+          "breaksPlayer1": [
+            93,
+            58,
+            53
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Gong Chenzhi",
           "player2": "Sahil Nayyar",
           "player1Score": 4,
@@ -70,6 +106,27 @@
           "breaksPlayer1": [],
           "breaksPlayer2": [
             58
+          ]
+        },
+        {
+          "player1": "Liam Davies",
+          "player2": "Julien Leclercq",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Wales",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-21",
+          "breaksPlayer1": [
+            77,
+            64,
+            54
+          ],
+          "breaksPlayer2": [
+            59,
+            50
           ]
         },
         {
@@ -198,6 +255,22 @@
           ]
         },
         {
+          "player1": "Oliver Sykes",
+          "player2": "Reanne Evans",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-21",
+          "breaksPlayer1": [
+            56
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Michal Szubarczyk",
           "player2": "Cheung Ka Wai",
           "player1Score": 4,
@@ -215,6 +288,25 @@
           "breaksPlayer2": [
             78
           ]
+        },
+        {
+          "player1": "Thanawat Thirapongpaiboon",
+          "player2": "Paul Norris",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "Thailand",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-21",
+          "breaksPlayer1": [
+            121,
+            80,
+            79,
+            74
+          ],
+          "breaksPlayer2": []
         },
         {
           "player1": "Alexander Ursenbacher",
@@ -263,6 +355,24 @@
           ],
           "breaksPlayer2": [
             70
+          ]
+        },
+        {
+          "player1": "Artemijs Zizins",
+          "player2": "Craig Steadman",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "Latvia",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 128",
+          "date": "2026-09-21",
+          "breaksPlayer1": [
+            60
+          ],
+          "breaksPlayer2": [
+            62
           ]
         }
       ]
