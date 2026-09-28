@@ -3775,6 +3775,26 @@
           ]
         },
         {
+          "player1": "Judd Trump",
+          "player2": "Huang Jiahao",
+          "player1Score": 5,
+          "player2Score": 0,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-09-28",
+          "breaksPlayer1": [
+            108,
+            69,
+            67,
+            67,
+            54
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Thepchaiya Un-Nooh",
           "player2": "Deng Haohui",
           "player1Score": 5,
@@ -3839,6 +3859,28 @@
           ]
         },
         {
+          "player1": "Fan Zhengyi",
+          "player2": "Mark Williams",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-09-28",
+          "breaksPlayer1": [
+            80,
+            60,
+            50
+          ],
+          "breaksPlayer2": [
+            118,
+            68,
+            57
+          ]
+        },
+        {
           "player1": "Chang Bingyu",
           "player2": "Chatchapong Nasa",
           "player1Score": 5,
@@ -3896,6 +3938,27 @@
             64
           ],
           "breaksPlayer2": []
+        },
+        {
+          "player1": "Jamie Clarke",
+          "player2": "Wang Xinzhong",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "Wales",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 96",
+          "date": "2026-09-28",
+          "breaksPlayer1": [
+            72,
+            56
+          ],
+          "breaksPlayer2": [
+            74,
+            60,
+            55
+          ]
         },
         {
           "player1": "Liam Davies",
@@ -3994,6 +4057,25 @@
           ],
           "breaksPlayer2": [
             74
+          ]
+        },
+        {
+          "player1": "Andrew Higginson",
+          "player2": "Chen Qien",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 96",
+          "date": "2026-09-28",
+          "breaksPlayer1": [
+            64,
+            58
+          ],
+          "breaksPlayer2": [
+            60
           ]
         },
         {
