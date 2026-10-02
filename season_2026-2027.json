@@ -3498,6 +3498,176 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/shenzhen-open/2026/7956",
       "matches": [
         {
+          "player1": "Michael Holt",
+          "player2": "Kyren Wilson",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            126,
+            84,
+            84,
+            54
+          ],
+          "breaksPlayer2": [
+            80,
+            54
+          ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Elliot Slessor",
+          "player1Score": 5,
+          "player2Score": 1,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            139,
+            53,
+            53
+          ],
+          "breaksPlayer2": [
+            56,
+            50
+          ]
+        },
+        {
+          "player1": "Jimmy Robertson",
+          "player2": "Scott Donaldson",
+          "player1Score": 5,
+          "player2Score": 0,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            100,
+            75,
+            68,
+            63
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Stephen Maguire",
+          "player1Score": 5,
+          "player2Score": 3,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            99,
+            65
+          ],
+          "breaksPlayer2": [
+            86,
+            61,
+            51
+          ]
+        },
+        {
+          "player1": "Yuan Sijun",
+          "player2": "Zak Surety",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            60
+          ],
+          "breaksPlayer2": [
+            76,
+            63,
+            58,
+            50
+          ]
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Si Jiahui",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            80,
+            71,
+            54,
+            53
+          ],
+          "breaksPlayer2": [
+            71
+          ]
+        },
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Neil Robertson",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Australia",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            86,
+            80,
+            77,
+            75,
+            72,
+            56
+          ],
+          "breaksPlayer2": [
+            60
+          ]
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Ricky Walden",
+          "player1Score": 5,
+          "player2Score": 3,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-01",
+          "breaksPlayer1": [
+            91,
+            56,
+            54
+          ],
+          "breaksPlayer2": [
+            83,
+            72,
+            61
+          ]
+        },
+        {
           "player1": "Scott Donaldson",
           "player2": "Pang Junxu",
           "player1Score": 5,
