@@ -3498,6 +3498,90 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/shenzhen-open/2026/7956",
       "matches": [
         {
+          "player1": "Jimmy Robertson",
+          "player2": "Chris Wakelin",
+          "player1Score": 5,
+          "player2Score": 3,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-02",
+          "breaksPlayer1": [
+            76,
+            73,
+            59,
+            54
+          ],
+          "breaksPlayer2": [
+            120
+          ]
+        },
+        {
+          "player1": "Yuan Sijun",
+          "player2": "Michael Holt",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-02",
+          "breaksPlayer1": [
+            139,
+            116,
+            69
+          ],
+          "breaksPlayer2": [
+            89
+          ]
+        },
+        {
+          "player1": "Judd Trump",
+          "player2": "Mark Selby",
+          "player1Score": 5,
+          "player2Score": 0,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-02",
+          "breaksPlayer1": [
+            79,
+            77,
+            63,
+            52,
+            51
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Shaun Murphy",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-02",
+          "breaksPlayer1": [
+            121,
+            117,
+            94,
+            52
+          ],
+          "breaksPlayer2": [
+            104,
+            98,
+            68
+          ]
+        },
+        {
           "player1": "Michael Holt",
           "player2": "Kyren Wilson",
           "player1Score": 5,
