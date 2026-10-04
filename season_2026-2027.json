@@ -3498,6 +3498,50 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/shenzhen-open/2026/7956",
       "matches": [
         {
+          "player1": "Yuan Sijun",
+          "player2": "Jimmy Robertson",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-10-03",
+          "breaksPlayer1": [
+            64,
+            62,
+            52
+          ],
+          "breaksPlayer2": [
+            102,
+            100,
+            62,
+            53
+          ]
+        },
+        {
+          "player1": "Wu Yize",
+          "player2": "Judd Trump",
+          "player1Score": 6,
+          "player2Score": 1,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-10-03",
+          "breaksPlayer1": [
+            110,
+            81,
+            53,
+            51
+          ],
+          "breaksPlayer2": [
+            77
+          ]
+        },
+        {
           "player1": "Jimmy Robertson",
           "player2": "Chris Wakelin",
           "player1Score": 5,
