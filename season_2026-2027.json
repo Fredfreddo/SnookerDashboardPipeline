@@ -2362,6 +2362,27 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/northern-ireland-open/2026/8125",
       "matches": [
         {
+          "player1": "Zhang Anda",
+          "player2": "Liam Pullen",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            110,
+            72,
+            64
+          ],
+          "breaksPlayer2": [
+            91,
+            68
+          ]
+        },
+        {
           "player1": "Mateusz Baranowski",
           "player2": "Gary Wilson",
           "player1Score": 4,
@@ -2380,6 +2401,23 @@
             107,
             82
           ]
+        },
+        {
+          "player1": "Luca Brecel",
+          "player2": "Peifan Lei",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Belgium",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            50,
+            50
+          ],
+          "breaksPlayer2": []
         },
         {
           "player1": "Sam Craigie",
@@ -2425,6 +2463,24 @@
           ]
         },
         {
+          "player1": "David Gilbert",
+          "player2": "Oliver Sykes",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            111,
+            106,
+            104
+          ],
+          "breaksPlayer2": []
+        },
+        {
           "player1": "Louis Heathcote",
           "player2": "Mark Selby",
           "player1Score": 4,
@@ -2442,6 +2498,82 @@
           "breaksPlayer2": [
             70,
             54
+          ]
+        },
+        {
+          "player1": "John Higgins",
+          "player2": "Liam Highfield",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Scotland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            121
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Jamie Jones",
+          "player2": "Chris Wakelin",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            65,
+            64,
+            63
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Pang Junxu",
+          "player2": "Alfie Burden",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            65,
+            58
+          ],
+          "breaksPlayer2": [
+            88,
+            59
+          ]
+        },
+        {
+          "player1": "Cheung Ka Wai",
+          "player2": "Ronnie O\u0027Sullivan",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "Hong Kong",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            88,
+            77,
+            60
+          ],
+          "breaksPlayer2": [
+            138,
+            72,
+            56
           ]
         },
         {
@@ -2497,6 +2629,28 @@
           ],
           "breaksPlayer2": [
             53
+          ]
+        },
+        {
+          "player1": "Martin O\u0027Donnell",
+          "player2": "Judd Trump",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            64,
+            52,
+            50
+          ],
+          "breaksPlayer2": [
+            94,
+            91,
+            52
           ]
         },
         {
@@ -2575,6 +2729,43 @@
           ],
           "breaksPlayer2": [
             80,
+            56
+          ]
+        },
+        {
+          "player1": "Daniel Wells",
+          "player2": "Barry Hawkins",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            106,
+            61
+          ],
+          "breaksPlayer2": [
+            86
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Ben Mertens",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-10-19",
+          "breaksPlayer1": [
+            81
+          ],
+          "breaksPlayer2": [
             56
           ]
         },
