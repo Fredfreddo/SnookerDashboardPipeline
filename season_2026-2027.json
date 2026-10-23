@@ -2362,6 +2362,48 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/northern-ireland-open/2026/8125",
       "matches": [
         {
+          "player1": "Sam Craigie",
+          "player2": "Matthew Selt",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-22",
+          "breaksPlayer1": [
+            108,
+            100,
+            96,
+            79
+          ],
+          "breaksPlayer2": [
+            58
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Pang Junxu",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-10-22",
+          "breaksPlayer1": [
+            94,
+            92,
+            70
+          ],
+          "breaksPlayer2": [
+            108,
+            97
+          ]
+        },
+        {
           "player1": "Mateusz Baranowski",
           "player2": "Wang Xinbo",
           "player1Score": 4,
@@ -2377,6 +2419,28 @@
           ],
           "breaksPlayer2": [
             112
+          ]
+        },
+        {
+          "player1": "Jordan Brown",
+          "player2": "Michael Holt",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "Northern Ireland",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-10-21",
+          "breaksPlayer1": [
+            113,
+            101,
+            66
+          ],
+          "breaksPlayer2": [
+            67,
+            64,
+            51
           ]
         },
         {
@@ -2399,6 +2463,46 @@
           "breaksPlayer2": [
             63,
             53
+          ]
+        },
+        {
+          "player1": "Scott Donaldson",
+          "player2": "Noppon Saengkham",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "Scotland",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-10-21",
+          "breaksPlayer1": [
+            75,
+            63
+          ],
+          "breaksPlayer2": [
+            120
+          ]
+        },
+        {
+          "player1": "David Gilbert",
+          "player2": "Gao Yang",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-10-21",
+          "breaksPlayer1": [
+            67,
+            66
+          ],
+          "breaksPlayer2": [
+            131,
+            86,
+            57
           ]
         },
         {
@@ -2477,6 +2581,22 @@
           "breaksPlayer2": []
         },
         {
+          "player1": "Martin O\u0027Donnell",
+          "player2": "Luca Brecel",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-10-21",
+          "breaksPlayer1": [],
+          "breaksPlayer2": [
+            54
+          ]
+        },
+        {
           "player1": "Matthew Selt",
           "player2": "Louis Heathcote",
           "player1Score": 4,
@@ -2495,6 +2615,25 @@
           "breaksPlayer2": [
             104,
             56
+          ]
+        },
+        {
+          "player1": "Elliot Slessor",
+          "player2": "Jamie Jones",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 32",
+          "date": "2026-10-21",
+          "breaksPlayer1": [
+            62,
+            58
+          ],
+          "breaksPlayer2": [
+            62
           ]
         },
         {
