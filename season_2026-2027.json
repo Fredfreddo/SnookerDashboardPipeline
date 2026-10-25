@@ -2362,6 +2362,32 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/northern-ireland-open/2026/8125",
       "matches": [
         {
+          "player1": "Kyren Wilson",
+          "player2": "Sam Craigie",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-10-24",
+          "breaksPlayer1": [
+            98,
+            95,
+            60,
+            56,
+            54,
+            51
+          ],
+          "breaksPlayer2": [
+            100,
+            78,
+            56,
+            55
+          ]
+        },
+        {
           "player1": "Sam Craigie",
           "player2": "Elliot Slessor",
           "player1Score": 6,
@@ -2378,6 +2404,51 @@
           ],
           "breaksPlayer2": [
             82
+          ]
+        },
+        {
+          "player1": "Jak Jones",
+          "player2": "Scott Donaldson",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-23",
+          "breaksPlayer1": [
+            84,
+            50
+          ],
+          "breaksPlayer2": [
+            78,
+            54,
+            52
+          ]
+        },
+        {
+          "player1": "Mark Williams",
+          "player2": "David Gilbert",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-10-23",
+          "breaksPlayer1": [
+            115,
+            104,
+            101,
+            68,
+            52
+          ],
+          "breaksPlayer2": [
+            95,
+            68,
+            51
           ]
         },
         {
