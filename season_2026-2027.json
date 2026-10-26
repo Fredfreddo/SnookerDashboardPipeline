@@ -2363,6 +2363,51 @@
       "matches": [
         {
           "player1": "Kyren Wilson",
+          "player2": "Jak Jones",
+          "player1Score": 9,
+          "player2Score": 2,
+          "bestOfFrames": 17,
+          "player1Country": "England",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-10-25",
+          "breaksPlayer1": [
+            135,
+            105,
+            101,
+            75,
+            67,
+            60
+          ],
+          "breaksPlayer2": [
+            130,
+            72
+          ]
+        },
+        {
+          "player1": "Jak Jones",
+          "player2": "Mark Williams",
+          "player1Score": 6,
+          "player2Score": 5,
+          "bestOfFrames": 11,
+          "player1Country": "Wales",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-10-24",
+          "breaksPlayer1": [
+            89,
+            87,
+            59
+          ],
+          "breaksPlayer2": [
+            96,
+            78
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
           "player2": "Sam Craigie",
           "player1Score": 6,
           "player2Score": 5,
