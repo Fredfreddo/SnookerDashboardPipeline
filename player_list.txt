@@ -137,6 +137,7 @@ Stephen Maguire
 Rod Lawler
 Michal Szubarczyk
 Rory McLeod
+Li Jun
 Ben Hancorn
 Mitchell Mann
 Krzysztof Czapnik
