@@ -1163,6 +1163,99 @@
       "matches": [
         {
           "player1": "Chang Bingyu",
+          "player2": "Zhao Xintong",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-04",
+          "breaksPlayer1": [
+            115,
+            107,
+            102,
+            100,
+            58
+          ],
+          "breaksPlayer2": [
+            113,
+            74,
+            64
+          ]
+        },
+        {
+          "player1": "John Higgins",
+          "player2": "Marco Fu",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Scotland",
+          "player2Country": "Hong Kong",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-04",
+          "breaksPlayer1": [
+            78,
+            77,
+            70,
+            60,
+            57,
+            54,
+            51
+          ],
+          "breaksPlayer2": [
+            86,
+            84
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Ding Junhui",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-04",
+          "breaksPlayer1": [
+            94,
+            59,
+            56,
+            54
+          ],
+          "breaksPlayer2": [
+            137,
+            99,
+            60
+          ]
+        },
+        {
+          "player1": "Fan Zhengyi",
+          "player2": "Hossein Vafaei",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "China",
+          "player2Country": "Iran",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-04",
+          "breaksPlayer1": [
+            111,
+            74,
+            61,
+            55
+          ],
+          "breaksPlayer2": [
+            118
+          ]
+        },
+        {
+          "player1": "Chang Bingyu",
           "player2": "Yuan Sijun",
           "player1Score": 6,
           "player2Score": 2,
