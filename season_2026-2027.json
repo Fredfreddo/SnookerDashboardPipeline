@@ -1162,6 +1162,32 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/international-championship/2026/8155",
       "matches": [
         {
+          "player1": "John Higgins",
+          "player2": "Chang Bingyu",
+          "player1Score": 9,
+          "player2Score": 2,
+          "bestOfFrames": 17,
+          "player1Country": "Scotland",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-11-06",
+          "breaksPlayer1": [
+            131,
+            110,
+            103,
+            93,
+            80,
+            55
+          ],
+          "breaksPlayer2": [
+            82,
+            74,
+            61,
+            55
+          ]
+        },
+        {
           "player1": "Kyren Wilson",
           "player2": "Fan Zhengyi",
           "player1Score": 9,
