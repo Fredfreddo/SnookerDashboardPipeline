@@ -1162,6 +1162,40 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/international-championship/2026/8155",
       "matches": [
         {
+          "player1": "Kyren Wilson",
+          "player2": "John Higgins",
+          "player1Score": 10,
+          "player2Score": 8,
+          "bestOfFrames": 19,
+          "player1Country": "England",
+          "player2Country": "Scotland",
+          "originalIndex": 0,
+          "round": "Final",
+          "date": "2026-11-07",
+          "breaksPlayer1": [
+            130,
+            101,
+            94,
+            80,
+            70,
+            69,
+            65,
+            62,
+            61,
+            58,
+            54,
+            52
+          ],
+          "breaksPlayer2": [
+            141,
+            75,
+            71,
+            70,
+            65,
+            56
+          ]
+        },
+        {
           "player1": "John Higgins",
           "player2": "Chang Bingyu",
           "player1Score": 9,
