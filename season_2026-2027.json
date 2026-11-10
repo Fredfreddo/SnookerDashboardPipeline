@@ -1160,7 +1160,68 @@
     {
       "name": "2026 Champion of Champions",
       "cuetrackerURL": "https://cuetracker.net/tournaments/champion-of-champions/2026/8557",
-      "matches": []
+      "matches": [
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Mark Selby",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-09",
+          "breaksPlayer1": [
+            56,
+            54
+          ],
+          "breaksPlayer2": [
+            70
+          ]
+        },
+        {
+          "player1": "Mark Selby",
+          "player2": "Alfie Burden",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-09",
+          "breaksPlayer1": [
+            95,
+            83,
+            62
+          ],
+          "breaksPlayer2": [
+            109,
+            99
+          ]
+        },
+        {
+          "player1": "Chris Wakelin",
+          "player2": "Barry Hawkins",
+          "player1Score": 4,
+          "player2Score": 1,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-09",
+          "breaksPlayer1": [
+            117,
+            56,
+            51
+          ],
+          "breaksPlayer2": [
+            69
+          ]
+        }
+      ]
     },
     {
       "name": "2026 International Championship",
