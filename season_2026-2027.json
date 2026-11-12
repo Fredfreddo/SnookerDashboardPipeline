@@ -1162,6 +1162,48 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/champion-of-champions/2026/8557",
       "matches": [
         {
+          "player1": "Shaun Murphy",
+          "player2": "Chang Bingyu",
+          "player1Score": 6,
+          "player2Score": 0,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-11",
+          "breaksPlayer1": [
+            142,
+            107,
+            78,
+            70,
+            50
+          ],
+          "breaksPlayer2": []
+        },
+        {
+          "player1": "Neil Robertson",
+          "player2": "Jak Jones",
+          "player1Score": 6,
+          "player2Score": 3,
+          "bestOfFrames": 11,
+          "player1Country": "Australia",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-10",
+          "breaksPlayer1": [
+            130,
+            62,
+            61,
+            59
+          ],
+          "breaksPlayer2": [
+            133,
+            80
+          ]
+        },
+        {
           "player1": "Chris Wakelin",
           "player2": "Mark Selby",
           "player1Score": 6,
@@ -1178,6 +1220,27 @@
           ],
           "breaksPlayer2": [
             70
+          ]
+        },
+        {
+          "player1": "Chang Bingyu",
+          "player2": "Wu Yize",
+          "player1Score": 4,
+          "player2Score": 3,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-11",
+          "breaksPlayer1": [
+            109,
+            58
+          ],
+          "breaksPlayer2": [
+            86,
+            60,
+            56
           ]
         },
         {
@@ -1198,6 +1261,22 @@
             89,
             75
           ]
+        },
+        {
+          "player1": "Shaun Murphy",
+          "player2": "Ronnie O\u0027Sullivan",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-11",
+          "breaksPlayer1": [
+            68
+          ],
+          "breaksPlayer2": []
         },
         {
           "player1": "Neil Robertson",
