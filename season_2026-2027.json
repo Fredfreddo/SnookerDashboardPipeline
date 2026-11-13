@@ -1223,6 +1223,28 @@
           ]
         },
         {
+          "player1": "Kyren Wilson",
+          "player2": "Zhao Xintong",
+          "player1Score": 6,
+          "player2Score": 1,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Quarter-final",
+          "date": "2026-11-12",
+          "breaksPlayer1": [
+            123,
+            104,
+            100,
+            86,
+            75
+          ],
+          "breaksPlayer2": [
+            78
+          ]
+        },
+        {
           "player1": "Chang Bingyu",
           "player2": "Wu Yize",
           "player1Score": 4,
@@ -1338,6 +1360,41 @@
           "breaksPlayer2": [
             69
           ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Ali Carter",
+          "player1Score": 4,
+          "player2Score": 2,
+          "bestOfFrames": 7,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-12",
+          "breaksPlayer1": [
+            73,
+            72
+          ],
+          "breaksPlayer2": [
+            57
+          ]
+        },
+        {
+          "player1": "Zhao Xintong",
+          "player2": "Thepchaiya Un-Nooh",
+          "player1Score": 4,
+          "player2Score": 0,
+          "bestOfFrames": 7,
+          "player1Country": "China",
+          "player2Country": "Thailand",
+          "originalIndex": 0,
+          "round": "Last 16",
+          "date": "2026-11-12",
+          "breaksPlayer1": [
+            85
+          ],
+          "breaksPlayer2": []
         }
       ]
     },
