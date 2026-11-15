@@ -1162,6 +1162,55 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/champion-of-champions/2026/8557",
       "matches": [
         {
+          "player1": "Chris Wakelin",
+          "player2": "Neil Robertson",
+          "player1Score": 6,
+          "player2Score": 2,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "Australia",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-11-13",
+          "breaksPlayer1": [
+            96,
+            67,
+            63,
+            55,
+            54
+          ],
+          "breaksPlayer2": [
+            108,
+            69,
+            53,
+            50
+          ]
+        },
+        {
+          "player1": "Kyren Wilson",
+          "player2": "Shaun Murphy",
+          "player1Score": 6,
+          "player2Score": 4,
+          "bestOfFrames": 11,
+          "player1Country": "England",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Semi-final",
+          "date": "2026-11-14",
+          "breaksPlayer1": [
+            138,
+            110,
+            92,
+            91,
+            75
+          ],
+          "breaksPlayer2": [
+            83,
+            82,
+            58
+          ]
+        },
+        {
           "player1": "Shaun Murphy",
           "player2": "Chang Bingyu",
           "player1Score": 6,
