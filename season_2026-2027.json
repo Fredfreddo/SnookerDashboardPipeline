@@ -6,6 +6,48 @@
       "cuetrackerURL": "https://cuetracker.net/tournaments/german-masters/2027/8627",
       "matches": [
         {
+          "player1": "Zhang Anda",
+          "player2": "Oliver Brown",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            112,
+            100,
+            52
+          ],
+          "breaksPlayer2": [
+            51
+          ]
+        },
+        {
+          "player1": "Stuart Bingham",
+          "player2": "Julien Leclercq",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Belgium",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            77,
+            64,
+            54
+          ],
+          "breaksPlayer2": [
+            115,
+            69,
+            54
+          ]
+        },
+        {
           "player1": "Luca Brecel",
           "player2": "Thepchaiya Un-Nooh",
           "player1Score": 5,
@@ -90,6 +132,73 @@
           ]
         },
         {
+          "player1": "Jack Lisowski",
+          "player2": "Aaron Hill",
+          "player1Score": 5,
+          "player2Score": 3,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "Ireland",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            147,
+            97,
+            81,
+            81,
+            75
+          ],
+          "breaksPlayer2": [
+            95,
+            77,
+            56
+          ]
+        },
+        {
+          "player1": "Anthony McGill",
+          "player2": "Jak Jones",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "Scotland",
+          "player2Country": "Wales",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            68,
+            57,
+            56,
+            50
+          ],
+          "breaksPlayer2": [
+            129
+          ]
+        },
+        {
+          "player1": "Yuan Sijun",
+          "player2": "Leone Crowley",
+          "player1Score": 5,
+          "player2Score": 3,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "Ireland",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            144,
+            128,
+            88
+          ],
+          "breaksPlayer2": [
+            84,
+            78,
+            57
+          ]
+        },
+        {
           "player1": "Elliot Slessor",
           "player2": "Tom Ford",
           "player1Score": 5,
@@ -113,6 +222,49 @@
             54,
             53,
             50
+          ]
+        },
+        {
+          "player1": "Daniel Wells",
+          "player2": "Peifan Lei",
+          "player1Score": 5,
+          "player2Score": 2,
+          "bestOfFrames": 9,
+          "player1Country": "Wales",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            86,
+            60,
+            60,
+            51
+          ],
+          "breaksPlayer2": [
+            81,
+            56
+          ]
+        },
+        {
+          "player1": "Jimmy White",
+          "player2": "Pang Junxu",
+          "player1Score": 5,
+          "player2Score": 4,
+          "bestOfFrames": 9,
+          "player1Country": "England",
+          "player2Country": "China",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            99,
+            86,
+            72,
+            65
+          ],
+          "breaksPlayer2": [
+            55
           ]
         },
         {
@@ -156,6 +308,25 @@
           "breaksPlayer2": [
             56
           ]
+        },
+        {
+          "player1": "Fan Zhengyi",
+          "player2": "Joe O\u0027Connor",
+          "player1Score": 5,
+          "player2Score": 1,
+          "bestOfFrames": 9,
+          "player1Country": "China",
+          "player2Country": "England",
+          "originalIndex": 0,
+          "round": "Last 64",
+          "date": "2026-11-19",
+          "breaksPlayer1": [
+            135,
+            90,
+            87,
+            55
+          ],
+          "breaksPlayer2": []
         },
         {
           "player1": "Luca Brecel",
