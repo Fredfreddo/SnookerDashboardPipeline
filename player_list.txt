@@ -10,6 +10,7 @@ Mark Allen
 Jack O'Brien
 Hossein Vafaei
 Yisong Peng
+Edward Jones
 Zhang Hao
 Andy Lee
 Kyren Wilson
